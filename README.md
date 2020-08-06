@@ -22,7 +22,7 @@ We also want to provide you with additional information about diabetes so that y
    * Jupyter Notebook
 
 ## Datasets:
-[Diabetes ML](https://www.kaggle.com/johndasilva/diabetes/data)
+   * [Diabetes ML](https://www.kaggle.com/johndasilva/diabetes/data)
    * [WHO World Figures](https://www.who.int/diabetes/facts/world_figures/en/index5.html)
 
 ## Machine Learning
