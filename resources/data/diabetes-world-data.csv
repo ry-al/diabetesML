@@ -1,0 +1,180 @@
+REGION,COUNTRY,COUNTRY_CODE,YEAR_2000,YEAR_2030
+Africa,Algeria,DZ,426000,1203000
+Africa,Angola,AO,51000,140000
+Africa,Benin,BJ,87000,266000
+Africa,Botswana,BW,25000,45000
+Africa,Burkina Faso,BF,124000,388000
+Africa,Burundi,BI,26000,72000
+Africa,Cabo Verde,CV,7000,24000
+Africa,Cameroon,CM,70000,171000
+Africa,Central African Republic,CF,18000,38000
+Africa,Chad,TD,97000,269000
+Africa,Comoros,KM,4000,15000
+Africa,Congo,CG,14000,39000
+Africa,C“te d'Ivoire,CI,264000,636000
+Africa,Democratic Republic of the Congo,CD,291000,910000
+Africa,Equatorial Guinea,GQ,8000,21000
+Africa,Eritrea,ER,47000,142000
+Africa,Eswatini,SZ,13000,21000
+Africa,Ethiopia,ET,796000,1820000
+Africa,Gabon,GA,8000,14000
+Africa,Gambia,GM,22000,61000
+Africa,Ghana,GH,302000,851000
+Africa,Guinea,GN,34000,89000
+Africa,Guinea-Bissau,GW,17000,44000
+Africa,Kenya,KE,183000,498000
+Africa,Lesotho,LS,31000,42000
+Africa,Liberia,LR,40000,154000
+Africa,Madagascar,MG,100000,301000
+Africa,Malawi,MW,55000,118000
+Africa,Mali,ML,140000,405000
+Africa,Mauritania,MR,34000,103000
+Africa,Mauritius,MU,111000,233000
+Africa,Mozambique,MZ,133000,273000
+Africa,Namibia,NA,25000,60000
+Africa,Niger,NE,108000,382000
+Africa,Nigeria,NG,1707000,4835000
+Africa,Rwanda,RW,30000,77000
+Africa,Sao Tome and Principe,ST,1000,2000
+Africa,Senegal,SN,143000,421000
+Africa,Seychelles,SC,8000,19000
+Africa,Sierra Leone,SL,65000,178000
+Africa,South Africa,ZA,814000,1286000
+Africa,Tanzania,TZ,201000,605000
+Africa,Togo,TG,64000,184000
+Africa,Uganda,UG,98000,328000
+Africa,Zambia,ZM,70000,186000
+Africa,Zimbabwe,ZW,108000,265000
+Americas,Antigua and Barbuda,AG,3000,5000
+Americas,Argentina,AR,1426000,2457000
+Americas,Bahamas,BS,12000,26000
+Americas,Barbados,BB,11000,22000
+Americas,Belize,BZ,5000,15000
+Americas,Bolivia,BO,207000,562000
+Americas,Brazil,BR,4553000,11305000
+Americas,Canada,CA,2006000,3543000
+Americas,Chile,CL,495000,1047000
+Americas,Colombia,CO,883000,2425000
+Americas,Costa Rica,CR,76000,237000
+Americas,Cuba,CU,480000,855000
+Americas,Dominica,DM,3000,4000
+Americas,Dominican Republic,DO,245000,594000
+Americas,Ecuador,EC,341000,921000
+Americas,El Salvador,SV,103000,320000
+Americas,Grenada,GD,4000,7000
+Americas,Guatemala,GT,139000,447000
+Americas,Guyana,GY,19000,36000
+Americas,Haiti,HT,161000,401000
+Americas,Honduras,HN,81000,269000
+Americas,Jamaica,JM,81000,189000
+Americas,Mexico,MX,2179000,6130000
+Americas,Nicaragua,NI,68000,246000
+Americas,Panama,PA,59000,155000
+Americas,Paraguay,PY,102000,324000
+Americas,Peru,PE,754000,1961000
+Americas,Saint Kitts and Nevis,KN,2000,2000
+Americas,Saint Lucia,LC,5000,11000
+Americas,Saint Vincent and the Grenadines,VC,5000,9000
+Americas,Suriname,SR,9000,20000
+Americas,Trinidad and Tobago,TT,60000,125000
+Americas,United States of America,US,17702000,30312000
+Americas,Uruguay,UY,154000,224000
+Americas,Venezuela,VE,583000,1606000
+Europe,Albania,AL,208518,298642
+Europe,Austria,AT,480868,688705
+Europe,Azerbaijan,AZ,462846,662894
+Europe,Belarus,BY,606501,868638
+Europe,Belgium,BE,608722,871819
+Europe,Bosnia and Herzegovina,BA,23976,34339
+Europe,Bulgaria,BG,442233,633371
+Europe,Croatia,HR,264521,378850
+Europe,Czechia,CZ,73304,104987
+Europe,Denmark,DK,318434,456065
+Europe,Estonia,EE,78921,113032
+Europe,Finland,FI,306735,439309
+Europe,France,FR,3554365,5090603
+Europe,Georgia,GE,276111,395449
+Europe,Germany,DE,4848506,6944087
+Europe,Greece,GR,626325,897030
+Europe,Hungary,HU,590139,845204
+Europe,Iceland,IS,17292,24766
+Europe,Ireland,IE,233503,334426
+Europe,Italy,IT,3415145,4891211
+Europe,Latvia,LV,135665,194301
+Europe,Liechtenstein,LI,1966,2816
+Europe,Lithuania,LT,212229,303957
+Europe,Luxembourg,LU,27217,38981
+Europe,Monaco,MC,1898,2718
+Europe,Montenegro,ME,300065,429757
+Europe,Netherlands,NL,959894,1374772
+Europe,North Macedonia,MK,120004,171871
+Europe,Poland,PL,2272138,3254183
+Europe,Portugal,PT,619067,886635
+Europe,Romania,RO,1315032,1883404
+Europe,Russia,RU,8469062,12129490
+Europe,Serbia,RS,336752,482300
+Europe,Slovakia,SK,319033,456923
+Europe,Slovenia,SI,118321,169461
+Europe,Spain,ES,2369457,3393564
+Europe,Sweden,SE,528611,757083
+Europe,Switzerland,CH,438286,627718
+Europe,Ukraine,UA,2807769,4021320
+Europe,United Kingdom,UK,3545335,5077671
+Mediterranean,Afghanistan,AF,468000,1403000
+Mediterranean,Bahrain,BH,37000,99000
+Mediterranean,Cyprus,CY,50000,87000
+Mediterranean,Djibouti,DJ,7000,9000
+Mediterranean,Egypt,EG,2623000,6726000
+Mediterranean,Iran,IR,2103000,6421000
+Mediterranean,Iraq,IQ,668000,2009000
+Mediterranean,Jordan,JO,195000,680000
+Mediterranean,Kuwait,KW,104000,319000
+Mediterranean,Lebanon,LB,146000,378000
+Mediterranean,Libya,LY,88000,245000
+Mediterranean,Morocco,MA,427000,1138000
+Mediterranean,Oman,OM,113000,343000
+Mediterranean,Pakistan,PK,5217000,13853000
+Mediterranean,Qatar,QA,38000,88000
+Mediterranean,Saudi Arabia,SA,890000,2523000
+Mediterranean,Somalia,SO,97000,331000
+Mediterranean,Sudan,SD,447000,1277000
+Mediterranean,Syrian Arab Republic,SY,627000,2313000
+Mediterranean,Tunisia,TN,166000,388000
+Mediterranean,United Arab Emirates,AE,350000,684000
+Mediterranean,Yemen,YE,327000,1286000
+Pacific,Australia,AU,941000,1673000
+Pacific,Brunei Darussalam,BN,18000,49000
+Pacific,Cambodia,KH,110000,317000
+Pacific,China,CN,20757000,42321000
+Pacific,Cook Islands,CK,700,1300
+Pacific,Fiji,FJ,37000,72000
+Pacific,Japan,JP,6765000,8914000
+Pacific,Kiribati,KI,4000,7000
+Pacific,Laos,LA,46000,128000
+Pacific,Malaysia,MY,942000,2479000
+Pacific,Marshall Islands,MH,2000,4000
+Pacific,Micronesia,FM,5000,13000
+Pacific,Mongolia,MN,34000,81000
+Pacific,Nauru,NR,2000,4000
+Pacific,New Zealand,NZ,179000,307000
+Pacific,Palau,PW,1000,2000
+Pacific,Papua New Guinea,PG,152000,392000
+Pacific,Philippines,PH,2770000,7798000
+Pacific,Samoa,WS,4000,7000
+Pacific,Singapore,SG,328000,695000
+Pacific,Solomon Islands,SB,13000,41000
+Pacific,South Korea,KR,1859000,3378000
+Pacific,Tonga,TO,3000,6000
+Pacific,Tuvalu,TV,300,800
+Pacific,Vanuatu,VU,6000,17000
+Pacific,Viet Nam,VN,792000,2343000
+SEA,Bangladesh,BD,3196000,11140000
+SEA,Bhutan,BT,35000,109000
+SEA,India,IN,31705000,79441000
+SEA,Indonesia,ID,8426000,21257000
+SEA,Maldives,MV,6000,25000
+SEA,Myanmar,MM,543000,1330000
+SEA,Nepal,NP,436000,1328000
+SEA,North Korea,KP,367000,635000
+SEA,Sri Lanka,LK,653000,1537000
+SEA,Thailand,TH,1536000,2739000
