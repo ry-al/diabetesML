@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="css" href="../static/css/style.css" title="style">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <title>Diabetes Portal</title>
+  </head>
+  <body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+        
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav mr-auto">
+           <li class="nav-item active">
+             <a class="nav-link" href="/templates/index.html">Home <span class="sr-only">(current)</span></a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="/templates/index.html">Diabetes Facts</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="/templates/treatment.html">Treatment</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="/templates/test.html">Diabetes Predictor</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="/templates/resources.html">Resources</a>
+           </li>
+      </div>
+    </nav>
+    
+    <!-- Diabetes Predictor -->
+    <div class="container-fluid">
+      <h2> Diabetes Predictor</h2>
+      <p>Let our AI predict your Diabetes risk!</p>
+      <!-- what does this mean? -->
+      <form action="/action_page.php"> 
+         <div class="form-group">
+            <label for="age">What is your age?</label>
+            <input type="age" class="form-control" placeholder="Enter age" id="age">
+         </div>
+         <div class="form-group">
+            <label for="gender">What is your gender at birth?</label>
+            <input type="gender" class="form-control" placeholder="Male/Female" id="gender">
+         </div>
+         <div class="form-group">
+            <label for="pregnancy">How many pregnancies have you had?</label>
+            <input type="pregnancy" class="form-control" placeholder="1" id="pregnancy">
+         </div>
+         <div class="form-group">
+            <label for="height">What is your height(inches)?</label>
+            <input type="height" class="form-control" placeholder="60" id="height">
+         </div>
+         <div class="form-group">
+            <label for="weight">What is your weight(lbs)?</label>
+            <input type="weight" class="form-control" placeholder="120" id="weight">
+         </div>
+         <div class="form-group">
+            <label for="weight">What is your weight(lbs)?</label>
+            <input type="weight" class="form-control" placeholder="120" id="weight">
+         </div>
+
+         <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>  
+
+ 
+   </body>
+</html>  
