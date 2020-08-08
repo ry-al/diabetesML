@@ -40,19 +40,19 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="/templates/index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/templates/index.html">Diabetes Facts</a>
+          <a class="nav-link" href="index.html">Diabetes Facts</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/templates/treatment.html">Treatment</a>
+          <a class="nav-link" href="treatment.html">Treatment</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/templates/test.html">Diabetes Predictor</a>
+          <a class="nav-link" href="test.html">Diabetes Predictor</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/templates/resources.html">Resources</a>
+          <a class="nav-link" href="resources.html">Resources</a>
         </li>
     </div>
   </nav>
@@ -61,6 +61,7 @@
   <div class="container-fluid">
     <h2 class="display-4"> Diabetes Predictor</h2>
     <p>Let our AI predict your Diabetes risk!</p>
+    <p>Enter your information below and click submit below.</p>
     <!-- what does this mean? -->
     <form action="/action_page.php">
       <div class="form-group">
@@ -91,22 +92,23 @@
       <!-- BMI CALCULATOR -->
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-3">
             <p>
               <iframe src="https://www.cdc.gov/healthyweight/assessing/adult-widget/iframe.html" frameborder="0"
                 style="border:none;" width="395" height="395">
                 Please upgrade to web browser that supports iframes to see this CDC widget.</iframe>
             </p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-8">
             <h2>Don't know your BMI?</h2>
-            <h2>Enter your height and weight below</h2>
-            <h3>BMI For Adults Widget</h3>
+            <h2>Enter your height and weight on the left</h2>
+            <a href="https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/index.html" target="_blank">
+              <strong>Click here for more information about Adult BMI</strong></a>
           </div>
         </div>
       </div>
 
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
     </form>
   </div>
 
