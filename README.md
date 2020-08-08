@@ -1,11 +1,10 @@
 # DiabetesML
 ![Dark Blue Diabetes Picture with Red iPad](static/assests/img/diabetes_digital.png)
 
-## Team Members: 
+## About us: 
 
-Ryla Almario, Sanjive Agarwal, Andrew Lau, Mitesh Parekh, Tamala Chipeta
-
-## Our Website:
+Team Members: Ryla Almario, Sanjive Agarwal, Andrew Lau, Mitesh Parekh, Tamala Chipeta
+Our Website:
 
 ## Background
 Diabetes continues to be a growing chronic disease around the world. The CDC states that [122 million Americans](https://www.cdc.gov/diabetes/library/socialmedia/infocards.html) have this chronic disease. In addition, the International Diabetes Federation(IDF) has found that 463 million individuals worldwide with a projected rise of up to [700 million people](https://www.idf.org/aboutdiabetes/what-is-diabetes/facts-figures.html) by 2045. 
