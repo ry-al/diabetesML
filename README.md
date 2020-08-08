@@ -1,5 +1,5 @@
 # DiabetesML
-![Dark Blue Diabetes Picture with Red iPad](resources/images/diabetes_digital.png)
+![Dark Blue Diabetes Picture with Red iPad](static/assests/img/diabetes_digital.png)
 
 ## Team Members: 
 
@@ -27,7 +27,25 @@ We also want to provide you with additional information about diabetes so that y
 
 ## Machine Learning
 
+The Model
+
+
+Accuracy(tableau visuals)
+
+
+Feature Importance(tableau visuals)
 
 ## Findings
+
+World Map 2000 & 2030 (tableau visuals)
+
+About the Test Subjects(tableau visuals)
+
+## Limitations
+At the time of this project, WHO had a website error that prevented us from pulling data from Europe and a few other countries. After finding most of that data, we came to the conclusion that some areas that data may not have been collected from some of those places.
+
+Our dataset for the machinie learning aspect only contained data from the Frankfurt population. Despite diabetes being a well known chronic condition, datasets from other regions were not available at this time.
+
+In the future, we would be interested in obtaining additional demographic information of the people living with diabetes. Government organizations and philanthopic groups didn't provide that type of information for public use.
 
 ## Resources
