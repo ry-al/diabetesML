@@ -11,7 +11,7 @@ Africa,Central African Republic,CF,18000,38000
 Africa,Chad,TD,97000,269000
 Africa,Comoros,KM,4000,15000
 Africa,Congo,CG,14000,39000
-Africa,C“te d'Ivoire,CI,264000,636000
+Africa,Cote Divoire,CI,264000,636000
 Africa,Democratic Republic of the Congo,CD,291000,910000
 Africa,Equatorial Guinea,GQ,8000,21000
 Africa,Eritrea,ER,47000,142000
@@ -81,6 +81,7 @@ Americas,United States of America,US,17702000,30312000
 Americas,Uruguay,UY,154000,224000
 Americas,Venezuela,VE,583000,1606000
 Europe,Albania,AL,208518,298642
+Europe,Armenia,AM,141200,163792
 Europe,Austria,AT,480868,688705
 Europe,Azerbaijan,AZ,462846,662894
 Europe,Belarus,BY,606501,868638
@@ -88,9 +89,11 @@ Europe,Belgium,BE,608722,871819
 Europe,Bosnia and Herzegovina,BA,23976,34339
 Europe,Bulgaria,BG,442233,633371
 Europe,Croatia,HR,264521,378850
+Europe,Cyprus,CY,91800,106488
 Europe,Czechia,CZ,73304,104987
 Europe,Denmark,DK,318434,456065
 Europe,Estonia,EE,78921,113032
+Europe,Faroe Islands,FO,2400,2784
 Europe,Finland,FI,306735,439309
 Europe,France,FR,3554365,5090603
 Europe,Georgia,GE,276111,395449
@@ -100,14 +103,19 @@ Europe,Hungary,HU,590139,845204
 Europe,Iceland,IS,17292,24766
 Europe,Ireland,IE,233503,334426
 Europe,Italy,IT,3415145,4891211
+Europe,Kazakhstan,KZ,735200,852832
+Europe,Kyrgyztan,KG,197800,229448
 Europe,Latvia,LV,135665,194301
 Europe,Liechtenstein,LI,1966,2816
 Europe,Lithuania,LT,212229,303957
 Europe,Luxembourg,LU,27217,38981
+Europe,Malta,MT,40500,46980
+Europe,Moldova,MD,193800,224808
 Europe,Monaco,MC,1898,2718
 Europe,Montenegro,ME,300065,429757
 Europe,Netherlands,NL,959894,1374772
 Europe,North Macedonia,MK,120004,171871
+Europe,Norway,NO,292400,339184
 Europe,Poland,PL,2272138,3254183
 Europe,Portugal,PT,619067,886635
 Europe,Romania,RO,1315032,1883404
@@ -118,8 +126,10 @@ Europe,Slovenia,SI,118321,169461
 Europe,Spain,ES,2369457,3393564
 Europe,Sweden,SE,528611,757083
 Europe,Switzerland,CH,438286,627718
+Europe,Turkey,TR,6592400,7647184
 Europe,Ukraine,UA,2807769,4021320
 Europe,United Kingdom,UK,3545335,5077671
+Europe,Uzbekistan,UZ,1121700,1301172
 Mediterranean,Afghanistan,AF,468000,1403000
 Mediterranean,Bahrain,BH,37000,99000
 Mediterranean,Cyprus,CY,50000,87000
