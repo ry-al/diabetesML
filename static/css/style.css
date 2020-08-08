@@ -12,15 +12,21 @@
 /* CAROUSEL
 -------------------------------------------------- */
 
-#facts {
+#main_section {
   margin-top: 100px;
   margin-bottom: 100px;
   margin-right: 150px;
   margin-left: 80px;
 }
 
+#separate{
+  flex-wrap: space-around;
+}
 
-
+#facts-section {
+  display: grid;
+  place-items: center;
+}
 
 
 
