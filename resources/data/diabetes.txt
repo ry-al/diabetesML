@@ -54,3 +54,11 @@ Blurred vision
 Pregnancy causes most women to have to urinate more often and to feel hungrier, so having these symptoms does not always mean that you have gestational diabetes. But it is important to get tested, because high blood sugar can cause problems for both you and your baby.
  
 
+
+
+Data: 
+1. The date used in the visualization was obtained from WHO https://www.who.int/diabetes/facts/world_figures/en/index1.html
+2. There are gaps in data for few countries.
+3. The data country data from WHO was mapped to the list of countries and country codes fro ISO to ensure compatibility wiht the World map from Tableau.
+
+
