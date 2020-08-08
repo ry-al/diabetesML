@@ -12,15 +12,28 @@
 /* CAROUSEL
 -------------------------------------------------- */
 
-#facts {
+#main_section {
   margin-top: 100px;
   margin-bottom: 100px;
   margin-right: 150px;
   margin-left: 80px;
+  align-content: center;
 }
 
+/* MAIN
+-------------------------------------------------- */
 
+.container {
+  margin-top: 100px;
+}
 
+img{
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto; */
+  display: flex;
+  justify-content: center;
+}
 
 
 
