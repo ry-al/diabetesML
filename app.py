@@ -30,21 +30,23 @@ def charts():
     return render_template("test.html")
     
 @app.route("/test", methods=["POST", "GET"])
-def test():
+def test1():
     # read data, do for each question, make sure the features are in correct order
-    age = request.form['age']
-    age = request.form['age']
-    age = request.form['age']
-    features = [age, x, x, x]
-    
+    age1 = request.form['age1']
+    height1 = request.form['height1']
+    weight1 = request.form['weight1']
+    bmi = (703 * weight1)/(height1^2)
+    features = [age1, bmi]
     
     # load model
     model = load("cancer_model.joblib")
     prediction = model.predict(features)
     # result is a 1 or 0 
 
-    if prediciton == 1, diabetes
+    if prediction == 1:
+        # print  
     else 
+        # print in html
 
     return render_template ("prediction.html", prediction)
 
