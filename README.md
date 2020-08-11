@@ -1,11 +1,10 @@
 # DiabetesML
-![Dark Blue Diabetes Picture with Red iPad](resources/images/diabetes_digital.png)
+![Dark Blue Diabetes Picture with Red iPad](static/assests/img/diabetes_digital.png)
 
-## Team Members: 
+## About us: 
 
-Ryla Almario, Sanjive Agarwal, Andrew Lau, Mitesh Parekh, Tamala Chipeta
-
-## Our Website:
+Team Members: Ryla Almario, Sanjive Agarwal, Andrew Lau, Mitesh Parekh, Tamala Chipeta
+Our Website:
 
 ## Background
 Diabetes continues to be a growing chronic disease around the world. The CDC states that [122 million Americans](https://www.cdc.gov/diabetes/library/socialmedia/infocards.html) have this chronic disease. In addition, the International Diabetes Federation(IDF) has found that 463 million individuals worldwide with a projected rise of up to [700 million people](https://www.idf.org/aboutdiabetes/what-is-diabetes/facts-figures.html) by 2045. 
@@ -27,7 +26,25 @@ We also want to provide you with additional information about diabetes so that y
 
 ## Machine Learning
 
+The Model
+
+
+Accuracy(tableau visuals)
+
+
+Feature Importance(tableau visuals)
 
 ## Findings
+
+World Map 2000 & 2030 (tableau visuals)
+
+About the Test Subjects(tableau visuals)
+
+## Limitations
+At the time of this project, WHO had a website error that prevented us from pulling data from Europe and a few other countries. After finding most of that data, we came to the conclusion that some areas that data may not have been collected from some of those places.
+
+Our dataset for the machinie learning aspect only contained data from the Frankfurt population. Despite diabetes being a well known chronic condition, datasets from other regions were not available at this time.
+
+In the future, we would be interested in obtaining additional demographic information of the people living with diabetes. Government organizations and philanthopic groups didn't provide that type of information for public use.
 
 ## Resources
