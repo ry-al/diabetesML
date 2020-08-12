@@ -32,7 +32,7 @@
           <a class="nav-link" href="/treatment">Treatment</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/test.html">Diabetes Predictor</a>
+          <a class="nav-link" href="/test">Diabetes Predictor</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/analytics">Analytics</a>
@@ -51,52 +51,50 @@
       <p>Let our AI predict your Diabetes risk!<br> Enter your information and click submit below.</p>
 
       <!-- what does this mean? -->
-      <h3>Quick Test</h3>
-      <form action="/action_page.php" method="post">
-        <div class="form-group">
-          <label for="age1">What is your age?</label>
-          <input type="age1" class="form-control" placeholder="Enter age" id="age1">
-        </div>
-        <div class="form-group">
-          <label for="height1">What is your height(inches)?</label>
-          <input type="height1" class="form-control" placeholder="60" id="height1">
-        </div>
-        <div class="form-group">
-          <label for="weight1">What is your weight(lbs)?</label>
-          <input type="weight1" class="form-control" placeholder="120" id="weight1">
-        </div>
-        <button type="submit" class="btn btn-primary">Find my Risk</button>
-      </form>
       <br>
       <br>
       <br>
       <h3>Complete Form</h3>
-      <form action="/action_page.php" method="post">
+      <form action="/completeTest" method="POST" role="form">
         <div class="form-group">
-          <label for="age2">What is your age?</label>
-          <input type="age2" class="form-control" placeholder="Enter age" id="age2">
+          <label for="age">What is your age?</label>
+          <input type="age" class="form-control" placeholder="Enter age" id="age">
         </div>
         <div class="form-group">
-          <label for="gender2">What is your gender at birth?</label>
-          <input type="gender2" class="form-control" placeholder="Male/Female" id="gender2">
+          <label for="gender">What is your gender at birth?</label>
+          <input type="gender" class="form-control" placeholder="Male/Female" id="gender">
         </div>
         <div class="form-group">
-          <label for="pregnancy2">How many pregnancies have you had?</label>
-          <input type="pregnancy2" class="form-control" placeholder="0" id="pregnancy2">
+          <label for="pregnancy">How many pregnancies have you had?</label>
+          <input type="pregnancy" class="form-control" placeholder="0" id="pregnancy">
         </div>
         <div class="form-group">
-          <label for="height2">What is your height(inches)?</label>
-          <input type="height2" class="form-control" placeholder="60" id="height2">
+          <label for="height">What is your height(inches)?</label>
+          <input type="height" class="form-control" placeholder="60" id="height">
         </div>
         <div class="form-group">
-          <label for="weight2">What is your weight(lbs)?</label>
-          <input type="weight2" class="form-control" placeholder="120" id="weight2">
+          <label for="weight">What is your weight(lbs)?</label>
+          <input type="weight" class="form-control" placeholder="120" id="weight">
         </div>
         <div class="form-group">
-          <label for="glucose2">What is your glucose level?</label>
-          <input type="glucose2" class="form-control" placeholder="120" id="glucose2">
+          <label for="glucose">What is your glucose level?</label>
+          <input type="glucose" class="form-control" placeholder="120" id="glucose">
         </div>
-        <button type="submit" class="btn btn-primary">Find my Risk</button>
+        <div class="form-group">
+          <label for="bp">What is your blood pressure(diastolic)?</label>
+          <input type="bp" class="form-control" placeholder="120" id="bp">
+        </div>
+        <div class="form-group">
+          <label for="skin">What is your skin thickness?</label>
+          <input type="skin" class="form-control" placeholder="120" id="skin">
+        </div>
+        <div class="form-group">
+          <label for="insulin">What is your insulin?</label>
+          <input type="insulin" class="form-control" placeholder="120" id="insulin">
+        </div>
+        <div class="form-group">
+          <input type="submit" value="submit" class="btn btn-primary ">Find my Risk</input>
+        </div>
       </form>
     </div>
   </main>
