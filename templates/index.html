@@ -10,27 +10,10 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <link rel="stylesheet" type="css" href="{{ url_for('static', filename='assets/css/style.css') }}" title="style">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
 
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-  </style>
-
-  <title>Diabetes Portal</title>
+   <title>Diabetes Portal</title>
 </head>
 
 <body>
@@ -58,7 +41,6 @@
     </div>
   </nav>
 
-
   <main role="main">
 
     <!-- ### CAROUSEL ### -->
@@ -73,10 +55,10 @@
           <div class="item active">
             <img src="{{ url_for('static', filename='assets/img/img1.jpg') }}" alt="doctor" style="width:100%;">
             <div class="container">
-              <div id="img1caption" class="carousel-caption text-left">
+              <div class="carousel-caption text-left">
                 <h1 style="color:black;">Welcome to Diabetes Portal</h1>
                 <p style="color:black;">Learn more about Diabetes</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Quick Facts</a></p>
+                <p><a class="btn btn-lg btn-primary" href="/" role="button">Quick Facts</a></p>
               </div>
             </div>
           </div>
@@ -85,9 +67,9 @@
           <img src="{{ url_for('static', filename='assets/img/img2.jpg') }}" alt="insulin" style="width:100%;">
           <div class="container">
             <div class="carousel-caption text-left">
-              <h1 style="color:black;">Explore TreatmentS</h1>
+              <h1 style="color:black;">Explore Treatments</h1>
               <p style="color:black;">Find out the new treatments available</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+              <p><a class="btn btn-lg btn-primary" href="/treatment" role="button">Learn more</a></p>
             </div>
           </div>
         </div>
@@ -97,7 +79,7 @@
             <div class="carousel-caption text-left">
               <h1 style="color:black;">Diabetes Predictor</h1>
               <p style="color:black;">Let our AI predict your risk for diabetes</p>
-              <p><a class="btn btn-lg btn-primary" href="test.html" role="button">Take the Test</a></p>
+              <p><a class="btn btn-lg btn-primary" href="/test.html" role="button">Take the Test</a></p>
             </div>
           </div>
         </div>
@@ -113,12 +95,13 @@
     </div>
 
     <!-- ### INSERT CONTENT HERE ### -->
-    <div id="main_section">
+    <div id="main_section" class="container-fluid">
 
 
       <!-- WHAT IS DIABETES -->
-      <div class="container-fluid">
-        <h3 class="display-4">What is Diabetes?</h3>
+      <div>
+        <!-- <h4 class="display-4">What is Diabetes?</h4> -->
+        <h4>What is Diabetes?</h4>
         <p class="lead">"Diabetes is a chronic (long-lasting) health condition that affects how your body turns food
           into energy.
           <br>
@@ -130,14 +113,13 @@
             Control(CDC)</a>
           <br>
           <br>
-          Unfortunatly, there is no way to prevent type 1 diabetes and there's is no cure once you have diabetes.</p>
+          Unfortunately, there is no way to prevent type 1 diabetes and there's is no cure once you have diabetes.</p>
       </div>
 
 
       <!-- TYPES -->
       <div class="container-fluid">
-        <h3 class="display-4"> Types of Diabetes </h3>
-        <p class="lead">There's 3 types of diabetes and also Prediabetes.</p>
+        <h4> Types of Diabetes </h4>
         <div class="row">
 
           <div class="col-md-3">
@@ -204,21 +186,14 @@
 
 
       <!-- FACTS -->
-      <div class="facts-section">
+      <div>
         <div class="container-fluid">
-          <h3 class="display-4"> Facts words bla bla bla </h3>
+          <h4> Quick Facts </h4>
           <img src="{{ url_for('static', filename='assets/img/cdc_infographic.jpg') }}">
         </div>
       </div>
 
-      <!-- 
-      STATISTICS
-      <div class="container-fluid">
-        <h1 class="display-4"> Statistics </h1>
-        <p>
-          Insert Tableau here
-        </p>
-      </div> -->
+
     </div>
 
   </main>
