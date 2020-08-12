@@ -1,6 +1,6 @@
 from joblib import load
 import json
-from flask import Flask, jsonify, render_template, url_for
+from flask import Flask, jsonify, render_template, url_for, request
 
 
 #################################################
@@ -22,68 +22,68 @@ def home():
     return render_template("index.html")
 
 @app.route("/treatment")
-def profile():
+def treatment():
     return render_template("treatment.html")
 
-@app.route("/test.html")
-def charts():
+@app.route("/test")
+def test():
     return render_template("test.html")
+
     
-# @app.route("/test", methods=["POST", "GET"])
-# def simpleTest():
+# @app.route("/quickTest", methods=["POST", "GET"])
+# def quickTest():
 #     # read data, do for each question, make sure the features are in correct order
 #     age1 = request.form['age1']
 #     height1 = request.form['height1']
 #     weight1 = request.form['weight1']
 
-#     # make sure that height is not 0
-#     if height >= 0:
-#         bmi = (703 * weight1)/(height1^2)
-#     else
-#         break
+#     bmi1 = (703 * weight1)/(height1^2)
     
 #     # user input list
-#     features = [age1, bmi]
+#     features1 = [age1, bmi1]
     
 #     # load model
-#     model = load("diabetes_model.joblib")
+#     model = load("predictions_1.sav")
 #     prediction = model.predict(features)
-#     # result is a 1 or 0 
-
-#     if prediction == 1:
-#         # print  
-#     else 
-#         # print in html
-
-#     return render_template ("prediction.html", prediction)
-
-# @app.route("/test", methods=["POST", "GET"])
-# def Test():
-#     # read data, do for each question, make sure the features are in correct order
-#     age1 = request.form['age1']
-#     height1 = request.form['height1']
-#     weight1 = request.form['weight1']
-
-#     # make sure that height is not 0
-#     if height >= 0:
-#         bmi = (703 * weight1)/(height1^2)
-#     else
-#         break
     
-#     # user input list
-#     features = [age1, bmi]
-    
-#     # load model
-#     model = load("diabetes_model.joblib")
-#     prediction = model.predict(features)
 #     # result is a 1 or 0 
-
 #     if prediction == 1:
-#         # print  
+#         return render_template("high.html")
 #     else 
-#         # print in html
+#         return render_template("low.html")
 
-#     return render_template ("prediction.html", prediction)
+
+@app.route("/completeTest", methods=["POST", "GET"])
+def completeTest():
+    age = request.form['age']
+    print(age)
+    # # read data, do for each question, make sure the features are in correct order
+    # age = request.form['age']
+    # height = request.form['height']
+    # weight = request.form['weight']
+    # pregnancy = request.form['pregnancy']
+    # glucose = request.form['glucose']
+    # bp = request.form['bp']
+    # skin = request.form['skin']
+    # insulin = request.form['insulin']
+                
+    # bmi = (703 * weight)/(height^2)
+
+    # # user input list
+    # features = [pregnancy, glucose, bp, skin, insulin, bmi, age]
+    
+    
+    # # load model
+    # model = load("result_complete.sav")
+    # prediction = model.predict(features)
+    # # result is a 1 or 0 
+
+    # if prediction == 1:
+    #     return render_template("high.html")
+    # else:
+    #     return render_template("low.html")
+
+    return render_template('index.html')
 
 @app.route("/analytics")
 def analytics():
