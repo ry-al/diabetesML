@@ -42,8 +42,14 @@
 
   <!-- ### INSERT CONTENT HERE ### -->
   <main id="main_section">
-    <img src="{{ url_for('static', filename='assets/img/predictor6.jpg') }}" alt="prediction">
-
+    <figure class="caption-1">
+      <img src="{{ url_for('static', filename='assets/img/predictor6.jpg') }}" alt="prediction" width="1903"
+        height='680'>
+      <figcaption class="px-5 py-4 text-right text-light">
+        <h2 class="h5 font-weight-bold mb-0"> Diabetes Predictor</h2>
+        <p>Let our AI predict your Diabetes risk!<br> Enter your information and click submit below.</p>
+      </figcaption>
+    </figure>
 
     <!-- Diabetes Predictor Test-->
     <div class="container-fluid">
@@ -93,11 +99,21 @@
           <input type="insulin" class="form-control" placeholder="120" id="insulin">
         </div>
         <div class="form-group">
-          <input type="submit" value="submit" class="btn btn-primary ">Find my Risk</input>
+          <input type="submit" value="Find my Risk" class="btn btn-primary "></input>
         </div>
       </form>
     </div>
   </main>
-</body> 
+
+  <footer>
+    <p>Rutgers University Data Science Boot Camp : Diabetes Portal Team Members</p>
+    <p><a href="#" target="_blank">Ryla Almario</a></p>
+    <p><a href="#" target="_blank">Sanjive Agarwal</a></p>
+    <p><a href="#" target="_blank">Andrew Lau</a></p>
+    <p><a href="#" target="_blank">Mitesh Parekh</a></p>
+    <p><a href="#" target="_blank">Tamala Chipeta</a></p>
+  </footer>
+
+</body>
 
 </html>

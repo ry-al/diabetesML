@@ -1,9 +1,10 @@
 # DiabetesML
-![Dark Blue Diabetes Picture with Red iPad](static/assests/img/diabetes_digital.png)
+![Dark Blue Diabetes Picture with Red iPad](/static/assets/img/diabetes_digital.PNG)
 
-## About us: 
+## About Us 
 
 Team Members: Ryla Almario, Sanjive Agarwal, Andrew Lau, Mitesh Parekh, Tamala Chipeta
+
 Our Website:
 
 ## Background
@@ -16,25 +17,30 @@ Because of this, early detection is key which is why we decided to make a quick 
 We also want to provide you with additional information about diabetes so that you can stay informed about this growing chronic illness.
 
 
-## Tools:
-   * Tableau
-   * Jupyter Notebook
+## Tools and Programs
+Tools: Tableau, Jupyter Notebook, MS Excel
+Programs: Python
 
 ## Datasets:
    * [Diabetes ML](https://www.kaggle.com/johndasilva/diabetes/data)
    * [WHO World Figures](https://www.who.int/diabetes/facts/world_figures/en/index5.html)
+   * [Treatment Centers](/resources/data/DPRP_Results_Full_RegistryAug_05_2020.csv)
+
+## ETL???
 
 ## Machine Learning
 
-The Model
+The Model(s), what files to reference etc
 
+Behind the Prediction tests?
 
 Accuracy(tableau visuals)
 
 
 Feature Importance(tableau visuals)
 
-## Findings
+
+## Findings/...what to find on the website??
 
 World Map 2000 & 2030 (tableau visuals)
 

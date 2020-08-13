@@ -23,8 +23,8 @@
 #main_section {
   margin-top: 50px;
   margin-bottom: 50px;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 50px;
+  margin-left: 50px;
   align-content: center;
 }
 
@@ -70,6 +70,33 @@ img{
   user-select: none;
 }
 
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: #b31ee0;
+}
+     
+footer {
+  clear: both;
+  text-align: center;
+  /* margin: 50px; */
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color:#3c8af1cc;
+  font-family: '"Gill Sans", sans-serif';
+  color: rgb(241, 234, 234);
+  }
+
+
+.maintxt {
+    position: relative;
+}
+.maintxt > img, .overlay-text {
+    position: absolute;
+}
+.overlay-text {padding: 150px 50px;}
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
