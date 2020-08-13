@@ -1,5 +1,5 @@
 # DiabetesML
-![Dark Blue Diabetes Picture with Red iPad](static/assests/img/diabetes_digital.PNG)
+![Dark Blue Diabetes Picture with Red iPad]("static/assests/img/diabetes_digital.PNG")
 
 ## About Us 
 
@@ -24,7 +24,7 @@ Programs: Python
 ## Datasets:
    * [Diabetes ML](https://www.kaggle.com/johndasilva/diabetes/data)
    * [WHO World Figures](https://www.who.int/diabetes/facts/world_figures/en/index5.html)
-   * Treatment Centers(insert link)
+   * [Treatment Centers]("resources/data/DPRP_Results_Full_RegistryAug_05_2020.csv")
 
 ## ETL???
 
