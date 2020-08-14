@@ -31,53 +31,97 @@ Programs: Python
 ## Machine Learning
 
 For the Machine Learning element of our project, we ran 3 different types of models. 
-I.	Random Forest Classifier
+
+<h3>I.	Random Forest Classifier</h3>
+
 We ran a Trees model or a Random Forest Classifier. This model gave us insight on the importance of the 8 features used to determine risk of diabetes in individuals. As a reminder, the 8 features are "Age", "Glucose", "DiabetesPedigreeFunction", "BloodPressure", "Insulin", "SkinThickness", "BMI", and “Pregancies”.  
-From these 8 features, we ran the Random Forest Classifier for 9 different combinations.  We started with "Age","Glucose","DiabetesPedigreeFunction","BloodPressure","Insulin","SkinThickness","BMI". It returned a score of 0.956. Here is the feature importance for this combination.
+
+From these 8 features, we ran the Random Forest Classifier for 9 different combinations.  We started with "Age","Glucose","DiabetesPedigreeFunction","BloodPressure","Insulin","SkinThickness","BMI". It returned a score of 0.956. 
+
+Here is the feature importance for this combination.
 28.35%	Glucose
+
 17.26%	BMI
+
 16.37%	Age
+
 13.57%	DiabetesPedigreeFunction
+
 9.26%	BloodPressure
+
 8.04%	Insulin
+
 7.14%	SkinThickness
 
+
 For the next 5 combinations, we removed the feature with lowest importance. Here are the results with their corresponding scores:
+
 Score: 0.958
+
 29.70%	Glucose
+
 18.15%	BMI
+
 17.47%	Age
+
 14.95%	DiabetesPedigreeFunction
+
 10.52%	BloodPressure
+
 9.21%	Insulin
 
+
 Score: 0.962
+
 32.42%	Glucose
+
 20.90%	BMI
+
 18.50%	Age
+
 17.00%	DiabetesPedigreeFunction
+
 11.17%	BloodPressure
 
+
 Score: 0.966
+
 36.41%	Glucose
+
 23.83%	BMI
+
 20.12%	Age
+
 19.64%	DiabetesPedigreeFunction
 
+
 Score: 0.962
+
 42.23%	Glucose
+
 32.72%	BMI
+
 25.06%	Age
 
+
 Score: 0.966
+
 52.23%	Glucose
+
 47.77%	BMI
 
+
 Next, we ran the classifier with only Glucose, and only with BMI. We chose Glucose because according to this model it always had the highest feature importance. We also ran BMI alone because it was always second highest. BMI is easily known information for any individual since it is a simple calculation based on height and weight. The score for Glucose alone was 0.754 and the score for BMI alone was 0.742. 
+
 Lastly, we decided to run a model with Age and BMI. Again, our reasoning behind this decision is that this is readily known information for any individual. Here are the score and feature importance for this combination. 
+
+
 Score: 0.924
+
 66.43%	BMI
+
 33.57%	Age
+
 
 
 
