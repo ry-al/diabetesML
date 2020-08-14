@@ -70,6 +70,20 @@ img{
   user-select: none;
 }
 
+/* treatment page */
+#site-aside {
+  display: inline;
+  float: right;
+  font-size: 14px;
+  line-height: 1.75em;
+  /* width: 27.27272727%; */
+  width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  font-style: italic;
+  background-color: lightgray;
+}
+
 footer a {
   color: white;
 }
