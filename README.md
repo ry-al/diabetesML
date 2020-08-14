@@ -136,6 +136,37 @@ We ran the recognition model for 9 different combinations of features. When we i
 We decided to use the ‘complete’ model that contained all the features for the diabetes predictor on our website since it was able to predict the outcomes most accurately.  
 
 
+<h3>III.	Tensor Flow Model</h3>
+Finally, we also ran a Tensor Flow model that utilized several imports from sklearn and keras including train test split again, min max scaler, label encoder, sequential, and to_categorical among others.  We split the data in training and testing, compiled the model, scaled the model, and fit the model. 
+
+
+We were able to obtain a model accuracy of 78.39% and the model loss was 43.95%. Using the tensor flow model, we obtained a diabetes risk score between 0 and 1 as opposed to only 0’s and 1’s. Our analytical capabilities were greatly increased from this output as shown by the scatter plots in our tableau analysis. 
+
+
+Here are some insights that we can garner:<br>
+There were 99 test results with score less than 0.1 and 97 had an actual outcome of 0.  Only 2.02% of individuals with a score less than 0.1 had an actual outcome of 1 which represents a high risk of diabetes.<br>
+There were 159 test results with score less than 0.2 and 153 had an actual outcome of 0. Only 3.77% of individuals with a score less than 0.2 had an actual outcome of 1.<br>
+There were 200 test results with score less than 0.3 and 185 had an actual outcome of 0. Only 7.5% of individuals with a score less than 0.3 had an actual outcome of 1.<br>
+There were 236 test results with score less than 0.4 and 216 had an actual outcome of 0. Only 8.47% of individuals with a score less than 0.4 had an actual outcome of 1.<br>
+There were 281 test results with score less than 0.5 and 246 had an actual outcome of 0. Only 12.46% of individuals with a score less than 0.1 had an actual outcome of 1. As your score increases, the likelihood a high risk for diabetes increases, but even as the score approaches 0.5, the ratio is still only 12.46%.<br>
+
+Next, we’ll take a look from the other perspective. <br>
+There were 59 test results with score greater than 0.9 and 51 had an actual outcome of 1.  86.44% of individuals with a score more than 0.9 had an actual outcome of 1 which represents a high risk of diabetes. It’s safe to say that if your score is above 0.9, your risk of diabetes is very high.<br>
+There were 98 test results with score greater than 0.8 and 77 had an actual outcome of 1. The percentage drops to 78.57%, which still means the probability of diabetes remains high/very high.<br>
+Furthermore, there were 141 test results with score greater than 0.7 and 100 had an actual outcome of 1 or 70.92% which still remains high.<br>
+Lastly, the results for over 0.6 and over 0.5 are 113/176 or 64.20% and 128/219 or 58.45%<br>
+
+Group	                  "1" Actual Outcome (High Risk)	    Number of tests	  % of High Risk<br>
+0.0 to less than 0.1	            2	                        99	              2.02%<br>
+0.1 to less than 0.2	            4	                        60	              6.67%<br>
+0.2 to less than 0.3	            9	                        41	              21.95%<br>
+0.3 to less than 0.4	            5	                        36	              13.89%<br>
+0.4 to less than 0.5	            15	                      45	              33.33%<br>
+0.5 to less than 0.6	            15	                      43	              34.88%<br>
+0.6 to less than 0.7	            13	                      35	              37.14%<br>
+0.7 to less than 0.8	            23	                      43	              53.49%<br>
+0.8 to less than 0.9	            26	                      39	              66.67%<br>
+0.9 to less than 1.0	            51	                      59	              86.44%<br>
 
 Behind the Prediction tests?
 
