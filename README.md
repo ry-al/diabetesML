@@ -156,7 +156,7 @@ There were 98 test results with score greater than 0.8 and 77 had an actual outc
 Furthermore, there were 141 test results with score greater than 0.7 and 100 had an actual outcome of 1 or 70.92% which still remains high.<br>
 Lastly, the results for over 0.6 and over 0.5 are 113/176 or 64.20% and 128/219 or 58.45%<br>
 
-
+![Dark Blue Diabetes Picture with Red iPad](/static/assets/img/TensorImage.png)
 
 Behind the Prediction tests?
 
