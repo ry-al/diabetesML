@@ -102,6 +102,39 @@ Score: 0.924
 33.57%	Age<br>
 
 
+<h3> II.	Diabetes – Recognition Tester </h3>
+
+The second machine learning model we ran was a Diabetes recognition tester that used sklearn to split the model into training and testing samples. Our dataset contained 2,000 records in total. The training sample contained 1,500 records and the testing sample contained 500 records. From that split we used sklearn to run a logistic regression. This model was used to predict an outcome based on the different combinations of features. An outcome that returns a ‘0’ means the individual is predicted to have low diabetes risk. Conversely, an outcome that returns a ‘1’ means the individual is predicted to have high diabetes risk. 
+
+
+We ran the recognition model for 9 different combinations of features. When we included all the features, the model was able to predict the outcome correctly 78.8% of the time or 394 out of 500 records from the testing sample.  Here are results from the 8 other combinations.
+
+76.6% "Age","Glucose","DiabetesPedigreeFunction","BloodPressure","SkinThickness","BMI"<br>
+383 out of 500 correct predictions
+
+76.6% "Age","Glucose","DiabetesPedigreeFunction","SkinThickness","BMI"<br>
+383 out of 500 correct predictions
+
+77.4% "Age","Glucose","DiabetesPedigreeFunction","BMI"<br>
+387 out of 500 correct predictions
+
+77.2% "Age","Glucose","BMI"<br>
+386 out of 500 correct predictions
+
+70.0% "Age","BMI"<br>
+350 out of 500 correct predictions
+
+76.4% "Glucose","BMI"<br>
+382 out of 500 correct predictions
+
+74.0% "Glucose"<br>
+370 out of 500 correct predictions
+
+69.2% "BMI"<br>
+346 out of 500 correct predictions
+
+We decided to use the ‘complete’ model that contained all the features for the diabetes predictor on our website since it was able to predict the outcomes most accurately.  
+
 
 
 Behind the Prediction tests?
