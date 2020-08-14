@@ -1,5 +1,5 @@
 # DiabetesML
-![Dark Blue Diabetes Picture with Red iPad](/static/assets/img/diabetes_digital.PNG)
+![Dark Blue Diabetes Picture with Red iPad](/static/assets/img/diabetes_digital.png)
 
 ## About Us 
 
