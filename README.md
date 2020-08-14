@@ -39,18 +39,13 @@ We ran a Trees model or a Random Forest Classifier. This model gave us insight o
 From these 8 features, we ran the Random Forest Classifier for 9 different combinations.  We started with "Age","Glucose","DiabetesPedigreeFunction","BloodPressure","Insulin","SkinThickness","BMI". It returned a score of 0.956. 
 
 Here is the feature importance for this combination.
+
 28.35%	Glucose
-
 17.26%	BMI
-
 16.37%	Age
-
 13.57%	DiabetesPedigreeFunction
-
 9.26%	BloodPressure
-
 8.04%	Insulin
-
 7.14%	SkinThickness
 
 
@@ -59,15 +54,10 @@ For the next 5 combinations, we removed the feature with lowest importance. Here
 Score: 0.958
 
 29.70%	Glucose
-
 18.15%	BMI
-
 17.47%	Age
-
 14.95%	DiabetesPedigreeFunction
-
 10.52%	BloodPressure
-
 9.21%	Insulin
 
 
