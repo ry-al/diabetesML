@@ -156,17 +156,7 @@ There were 98 test results with score greater than 0.8 and 77 had an actual outc
 Furthermore, there were 141 test results with score greater than 0.7 and 100 had an actual outcome of 1 or 70.92% which still remains high.<br>
 Lastly, the results for over 0.6 and over 0.5 are 113/176 or 64.20% and 128/219 or 58.45%<br>
 
-Group	                  "1" Actual Outcome (High Risk)	    Number of tests	  % of High Risk<br>
-0.0 to less than 0.1	            2	                        99	              2.02%<br>
-0.1 to less than 0.2	            4	                        60	              6.67%<br>
-0.2 to less than 0.3	            9	                        41	              21.95%<br>
-0.3 to less than 0.4	            5	                        36	              13.89%<br>
-0.4 to less than 0.5	            15	                      45	              33.33%<br>
-0.5 to less than 0.6	            15	                      43	              34.88%<br>
-0.6 to less than 0.7	            13	                      35	              37.14%<br>
-0.7 to less than 0.8	            23	                      43	              53.49%<br>
-0.8 to less than 0.9	            26	                      39	              66.67%<br>
-0.9 to less than 1.0	            51	                      59	              86.44%<br>
+
 
 Behind the Prediction tests?
 
