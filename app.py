@@ -1,5 +1,6 @@
 from joblib import load
 import json
+import numpy as np
 from flask import Flask, jsonify, render_template, url_for, request
 
 
@@ -55,35 +56,46 @@ def test():
 
 @app.route("/completeTest", methods=["POST", "GET"])
 def completeTest():
-    age = request.form['age']
-    print(age)
-    # # read data, do for each question, make sure the features are in correct order
-    # age = request.form['age']
-    # height = request.form['height']
-    # weight = request.form['weight']
-    # pregnancy = request.form['pregnancy']
-    # glucose = request.form['glucose']
-    # bp = request.form['bp']
-    # skin = request.form['skin']
-    # insulin = request.form['insulin']
+    print("hello")
+    print(request.form.keys())
+    # read data, do for each question, make sure the features are in correct order
+    age = int(request.form['age'])
+    print(type(age))
+    height = float(request.form['height'])
+    weight = float(request.form['weight'])
+    pregnancy = int(request.form['pregnancy'])
+    glucose = int(request.form['glucose'])
+    bp = int(request.form['bp'])
+    skin = int(request.form['skin'])
+    insulin = int(request.form['insulin'])
+    pedigree = float(request.form['pedigree'])
+
+    height = float(height)
+    weight = float(weight)
                 
-    # bmi = (703 * weight)/(height^2)
+    bmi = (703 * weight)/(height*height)
 
-    # # user input list
-    # features = [pregnancy, glucose, bp, skin, insulin, bmi, age]
+    # user input list
+    features = [pregnancy, glucose, bp, skin, insulin, bmi, pedigree, age]
     
+    final_features = [np.array(features)]
+    final_shape = np.reshape(final_features,(1,-1))
     
-    # # load model
-    # model = load("result_complete.sav")
-    # prediction = model.predict(features)
-    # # result is a 1 or 0 
+    # load model
+    model = load("classifier_complete.sav")
+    prediction = model.predict(final_shape)
+    print(prediction)
+    final_predict = prediction[0]
+    
 
-    # if prediction == 1:
-    #     return render_template("high.html")
-    # else:
-    #     return render_template("low.html")
+    if prediction == 1:
+        return render_template("high.html")
+    else:
+        return render_template("low.html")
 
     return render_template('index.html')
+
+
 
 @app.route("/analytics")
 def analytics():
