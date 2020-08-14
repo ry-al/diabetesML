@@ -10,25 +10,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <link rel="stylesheet" type="css" href="{{ url_for('static', filename='assets/css/style.css') }}" title="style">
-
-
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" type="css" href="{{ url_for('static', filename='css/style.css') }}" title="style">
 
   <title>Diabetes Portal</title>
 </head>
@@ -50,7 +32,7 @@
           <a class="nav-link" href="/treatment">Treatment</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/test.html">Diabetes Predictor</a>
+          <a class="nav-link" href="/test">Diabetes Predictor</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/analytics">Analytics</a>
@@ -60,11 +42,72 @@
 
   <!-- ### INSERT CONTENT HERE ### -->
 
-  <main>
-    <h3>Treatment</h3>
+
+  <img src="{{ url_for('static', filename='assets/img/diabetes_digital2.png') }}" alt="doctor" style="width:100%;">
+  <h3>Treatment</h3>
+
+  <div class="sidebar">
+    <aside id="site-aside" role="complementary">
+      <ul>
+        <li><a href="https://www.webmd.com/diabetes/guide/understanding-diabetes-detection-treatment"
+            target="_blank">Understanding
+            Diabetes--Diagnosis & Treatment</a></li>
+        <li><a href="https://www.niddk.nih.gov/health-information/diabetes/overview/insulin-medicines-treatments"
+            target="_blank">NIH
+            Types of Insulin</a></li>
+        <li><a href="https://www.mayoclinic.org/diseases-conditions/type-1-diabetes/diagnosis-treatment/drc-20353017"
+            target="_blank">Mayo
+            Clinic Type 1 Diabetes Treatment</a></li>
+        <li><a href="https://www.cdc.gov/diabetes/library/glossary.html" target="_blank">CDC Diabetes Glossary</a></li>
+      </ul>
+    </aside>
+  </div>
+
+  <hr>
+
+  <main id="main_section">
+    <h3>Treatment Center Map</h3>
+    <h6>Click on the filters below to find a treatment center near you</h6>
+    <div class='tableauPlaceholder' id='viz1597380229722' style='position: relative'><noscript><a href='#'>
+          <img alt=' '
+            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;di&#47;diabetes_treatment&#47;recog_stat_Dashboard2&#47;1_rss.png'
+            style='border: none' /></a></noscript>
+      <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='diabetes_treatment&#47;recog_stat_Dashboard2' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image'
+          value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;di&#47;diabetes_treatment&#47;recog_stat_Dashboard2&#47;1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en' /></object></div>
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1597380229722');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      if (divElement.offsetWidth > 800) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; }
+      else if (divElement.offsetWidth > 500) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; }
+      else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; }
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+    </script>
 
   </main>
 
+  <footer>
+    <p>Rutgers University Data Science Boot Camp : Diabetes Portal Team Members</p>
+    <p><a href="#" target="_blank">Ryla Almario</a></p>
+    <p><a href="#" target="_blank">Sanjive Agarwal</a></p>
+    <p><a href="#" target="_blank">Andrew Lau</a></p>
+    <p><a href="#" target="_blank">Mitesh Parekh</a></p>
+    <p><a href="#" target="_blank">Tamala Chipeta</a></p>
+  </footer>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

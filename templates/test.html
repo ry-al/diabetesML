@@ -12,24 +12,6 @@
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" type="css" href="{{ url_for('static', filename='assets/css/style.css') }}" title="style">
 
-
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-  </style>
-
   <title>Diabetes Portal</title>
 </head>
 
@@ -50,7 +32,7 @@
           <a class="nav-link" href="/treatment">Treatment</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/test.html">Diabetes Predictor</a>
+          <a class="nav-link" href="/test">Diabetes Predictor</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/analytics">Analytics</a>
@@ -59,71 +41,83 @@
   </nav>
 
   <!-- ### INSERT CONTENT HERE ### -->
-  <main>
-    <img src="{{ url_for('static', filename='assets/img/predictor6.jpg') }}" alt="prediction">
-
+  <main id="main_section">
+    <figure class="caption-1">
+      <img src="{{ url_for('static', filename='assets/img/predictor6.jpg') }}" alt="prediction" width="1903"
+        height='680'>
+      <figcaption class="px-5 py-4 text-right text-light">
+        <h2 class="h5 font-weight-bold mb-0"> Diabetes Predictor</h2>
+        <p>Let our AI predict your Diabetes risk!<br> Enter your information and click submit below.</p>
+      </figcaption>
+    </figure>
 
     <!-- Diabetes Predictor Test-->
     <div class="container-fluid">
       <h2 class="display-4"> Diabetes Predictor</h2>
       <p>Let our AI predict your Diabetes risk!<br> Enter your information and click submit below.</p>
 
-      <!-- Diabetes Predictor -->
-      <div class="container-fluid">
-        <h2> Diabetes Predictor</h2>
-        <p>Let our AI predict your Diabetes risk!<br> 
-        Enter your information and click submit below.
-        </p>
-
-        <!-- what does this mean? -->
-        <form action="/action_page.php" method="post">
-          <div class="form-group">
-            <label for="age1">What is your age?</label>
-            <input type="age1" class="form-control" placeholder="Enter age" id="age1">
-          </div>
-          <div class="form-group">
-            <label for="height1">What is your height(inches)?</label>
-            <input type="height1" class="form-control" placeholder="60" id="height1">
-          </div>
-          <div class="form-group">
-            <label for="weight1">What is your weight(lbs)?</label>
-            <input type="weight1" class="form-control" placeholder="120" id="weight1">
-          </div>
-          <button type="submit" class="btn btn-primary">Find my Risk</button>
-        </form>
-        <br>
-        <br>
-        <br>
-        <h6>Complete Form</h6>
-        <form action="/action_page.php" method="post">
-          <div class="form-group">
-            <label for="age2">What is your age?</label>
-            <input type="age2" class="form-control" placeholder="Enter age" id="age2">
-          </div>
-          <div class="form-group">
-            <label for="gender2">What is your gender at birth?</label>
-            <input type="gender2" class="form-control" placeholder="Male/Female" id="gender2">
-          </div>
-          <div class="form-group">
-            <label for="pregnancy2">How many pregnancies have you had?</label>
-            <input type="pregnancy2" class="form-control" placeholder="0" id="pregnancy2">
-          </div>
-          <div class="form-group">
-            <label for="height2">What is your height(inches)?</label>
-            <input type="height2" class="form-control" placeholder="60" id="height2">
-          </div>
-          <div class="form-group">
-            <label for="weight2">What is your weight(lbs)?</label>
-            <input type="weight2" class="form-control" placeholder="120" id="weight2">
-          </div>
-          <div class="form-group">
-            <label for="glucose2">What is your glucose level?</label>
-            <input type="glucose2" class="form-control" placeholder="120" id="glucose2">
-          </div>
-          <button type="submit" class="btn btn-primary">Find my Risk</button>
-        </form>
-      </div>
+      <!-- what does this mean? -->
+      <br>
+      <br>
+      <br>
+      <h3>Complete Form</h3>
+      <form action="/completeTest" method="POST" role="form">
+        <div class="form-group">
+          <label for="age">What is your age?</label>
+          <input type="integer" step="any" class="form-control" placeholder="Enter age" id="age" name="age"> 
+        </div>
+        <div class="form-group">
+          <label for="gender">What is your gender at birth?</label>
+          <input type="text" step="any" class="form-control" placeholder="Male/Female" id="gender" name="gender">
+        </div>
+        <div class="form-group">
+          <label for="pregnancy">How many pregnancies have you had?</label>
+          <input type="text" class="form-control" placeholder="0" id="pregnancy" name="pregnancy">
+        </div>
+        <div class="form-group">
+          <label for="height">What is your height(inches)?</label>
+          <input type="number" step="any" class="form-control" placeholder="60" id="height" name="height">
+        </div>
+        <div class="form-group">
+          <label for="weight">What is your weight(lbs)?</label>
+          <input type="number" step="any" class="form-control" placeholder="120" id="weight" name="weight">
+        </div>
+        <div class="form-group">
+          <label for="glucose">What is your glucose level?</label>
+          <input type="number" step="any" class="form-control" placeholder="120" id="glucose" name="glucose">
+        </div>
+        <div class="form-group">
+          <label for="bp">What is your blood pressure(diastolic)?</label>
+          <input type="number" step="any" class="form-control" placeholder="120" id="bp" name="bp">
+        </div>
+        <div class="form-group">
+          <label for="skin">What is your skin thickness?</label>
+          <input type="number" step="any" class="form-control" placeholder="120" id="skin" name="skin">
+        </div>
+        <div class="form-group">
+          <label for="insulin">What is your insulin?</label>
+          <input type="number" step="any" class="form-control" placeholder="120" id="insulin" name="insulin">
+        </div>
+        <div class="form-group">
+          <label for="pedigree">What is your diabetic pedigree function?</label>
+          <input type="number" step="any" class="form-control" placeholder="120" id="pedigree" name="pedigree">
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Find my Risk" class="btn btn-primary "></input>
+        </div>
+      </form>
+    </div>
   </main>
-</body> 
+
+  <footer>
+    <p>Rutgers University Data Science Boot Camp : Diabetes Portal Team Members</p>
+    <p><a href="#" target="_blank">Ryla Almario</a></p>
+    <p><a href="#" target="_blank">Sanjive Agarwal</a></p>
+    <p><a href="#" target="_blank">Andrew Lau</a></p>
+    <p><a href="#" target="_blank">Mitesh Parekh</a></p>
+    <p><a href="#" target="_blank">Tamala Chipeta</a></p>
+  </footer>
+
+</body>
 
 </html>
