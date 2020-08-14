@@ -40,65 +40,55 @@ From these 8 features, we ran the Random Forest Classifier for 9 different combi
 
 Here is the feature importance for this combination.
 
-28.35%	Glucose
-17.26%	BMI
-16.37%	Age
-13.57%	DiabetesPedigreeFunction
-9.26%	BloodPressure
-8.04%	Insulin
-7.14%	SkinThickness
+28.35%	Glucose<br>
+17.26%	BMI<br>
+16.37%	Age<br>
+13.57%	DiabetesPedigreeFunction<br>
+9.26%	BloodPressure<br>
+8.04%	Insulin<br>
+7.14%	SkinThickness<br>
 
 
 For the next 5 combinations, we removed the feature with lowest importance. Here are the results with their corresponding scores:
 
 Score: 0.958
 
-29.70%	Glucose
-18.15%	BMI
-17.47%	Age
-14.95%	DiabetesPedigreeFunction
-10.52%	BloodPressure
-9.21%	Insulin
+29.70%	Glucose<br>
+18.15%	BMI<br>
+17.47%	Age<br>
+14.95%	DiabetesPedigreeFunction<br>
+10.52%	BloodPressure<br>
+9.21%	Insulin<br>
 
 
 Score: 0.962
 
-32.42%	Glucose
-
-20.90%	BMI
-
-18.50%	Age
-
-17.00%	DiabetesPedigreeFunction
-
-11.17%	BloodPressure
+32.42%	Glucose<br>
+20.90%	BMI<br>
+18.50%	Age<br>
+17.00%	DiabetesPedigreeFunction<br>
+11.17%	BloodPressure<br>
 
 
 Score: 0.966
 
-36.41%	Glucose
-
-23.83%	BMI
-
-20.12%	Age
-
-19.64%	DiabetesPedigreeFunction
+36.41%	Glucose<br>
+23.83%	BMI<br>
+20.12%	Age<br>
+19.64%	DiabetesPedigreeFunction<br>
 
 
 Score: 0.962
 
-42.23%	Glucose
-
-32.72%	BMI
-
-25.06%	Age
+42.23%	Glucose<br>
+32.72%	BMI<br>
+25.06%	Age<br>
 
 
 Score: 0.966
 
-52.23%	Glucose
-
-47.77%	BMI
+52.23%	Glucose<br>
+47.77%	BMI<br>
 
 
 Next, we ran the classifier with only Glucose, and only with BMI. We chose Glucose because according to this model it always had the highest feature importance. We also ran BMI alone because it was always second highest. BMI is easily known information for any individual since it is a simple calculation based on height and weight. The score for Glucose alone was 0.754 and the score for BMI alone was 0.742. 
@@ -108,9 +98,8 @@ Lastly, we decided to run a model with Age and BMI. Again, our reasoning behind 
 
 Score: 0.924
 
-66.43%	BMI
-
-33.57%	Age
+66.43%	BMI<br>
+33.57%	Age<br>
 
 
 
