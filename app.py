@@ -56,11 +56,8 @@ def test():
 
 @app.route("/completeTest", methods=["POST", "GET"])
 def completeTest():
-    print("hello")
-    print(request.form.keys())
     # read data, do for each question, make sure the features are in correct order
     age = int(request.form['age'])
-    print(type(age))
     height = float(request.form['height'])
     weight = float(request.form['weight'])
     pregnancy = int(request.form['pregnancy'])
@@ -70,8 +67,8 @@ def completeTest():
     insulin = int(request.form['insulin'])
     pedigree = float(request.form['pedigree'])
 
-    height = float(height)
-    weight = float(weight)
+    # height = float(height)
+    # weight = float(weight)
                 
     bmi = (703 * weight)/(height*height)
 
