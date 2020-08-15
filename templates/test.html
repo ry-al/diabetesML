@@ -42,81 +42,87 @@
   </nav>
 
   <!-- ### INSERT CONTENT HERE ### -->
-  <div class="img-container">
-    <img src="{{ url_for('static', filename='assets/img/predictor7.png') }}" alt="prediction" width="1349" height='590'>
+  <!-- <div class="img-container">
+    <img class="hero-image" src="{{ url_for('static', filename='assets/img/predictor6.jpg') }}" alt="prediction" width="1349" height='590'>
     <div class="text-block">
       <h1 class="treat"> Diabetes Predictor</h1>
       <h4>Let our AI predict your Diabetes risk!<br> Enter your information and click submit below.</h4>
     </div>
-  </div>
+  </div> -->
 
   <!-- Diabetes Predictor Test-->
   <!-- <div class="container-fluid">
     <h2 class="display-4"> Diabetes Predictor</h2>
     <p>Let our AI predict your Diabetes risk!<br> Enter your information and click submit below.</p> -->
+  <!-- <br> -->
+  <div class="sidebar">
+    <aside id="site-aside" role="complementary">
+      <img src="{{ url_for('static', filename='assets/img/predictor5.jpg') }}" alt="prediction">
+    </aside>
+  </div>
 
-    <!-- what does this mean? -->
-    <!-- <br>
+  <!-- what does this mean? -->
+  <!-- <br>
     <br>
     <br> -->
-    <main id="main_section">
-      <h3>Complete Form</h3>
-      <p>Please keep in mind that our AI is still learning! Consult with your doctor for a proper diagnosis.</p>
-      <hr>
-      <form action="/completeTest" method="POST" role="form">
-        <div class="form-group">
-          <label for="age">What is your age?</label>
-          <input type="integer" step="any" class="form-control" placeholder="Enter age" id="age" name="age">
-        </div>
-        <div class="form-group">
-          <label for="gender">What is your gender at birth?</label>
-          <input type="text" step="any" class="form-control" placeholder="Male/Female" id="gender" name="gender">
-        </div>
-        <div class="form-group">
-          <label for="pregnancy">How many pregnancies have you had?</label>
-          <input type="text" class="form-control" placeholder="0" id="pregnancy" name="pregnancy">
-        </div>
-        <div class="form-group">
-          <label for="height">What is your height(inches)?</label>
-          <input type="number" step="any" class="form-control" placeholder="60" id="height" name="height">
-        </div>
-        <div class="form-group">
-          <label for="weight">What is your weight(lbs)?</label>
-          <input type="number" step="any" class="form-control" placeholder="120" id="weight" name="weight">
-        </div>
-        <div class="form-group">
-          <label for="glucose">What is your glucose level?</label>
-          <input type="number" step="any" class="form-control" placeholder="120" id="glucose" name="glucose">
-        </div>
-        <div class="form-group">
-          <label for="bp">What is your blood pressure(diastolic)?</label>
-          <input type="number" step="any" class="form-control" placeholder="120" id="bp" name="bp">
-        </div>
-        <div class="form-group">
-          <label for="skin">What is your skin thickness?</label>
-          <input type="number" step="any" class="form-control" placeholder="120" id="skin" name="skin">
-        </div>
-        <div class="form-group">
-          <label for="insulin">What is your insulin?</label>
-          <input type="number" step="any" class="form-control" placeholder="120" id="insulin" name="insulin">
-        </div>
-        <div class="form-group">
-          <label for="pedigree">What is your diabetic pedigree function?</label>
-          <input type="number" step="any" class="form-control" placeholder="120" id="pedigree" name="pedigree">
-        </div>
-        <div class="form-group">
-          <input type="submit" value="Find my Risk" class="btn btn-primary "></input>
-        </div>
-      </form>
+  <main id="main_section">
+    <!-- <h3>Complete Form</h3> -->
+    <h1 class="treat"> Diabetes Predictor</h1>
+    <h4>Let our AI predict your Diabetes risk!<br> Enter your information and click submit below.</h4>
+    <p>Please keep in mind that our AI is still learning! Consult with your doctor for a proper diagnosis.</p>
+    <hr>
+    <form action="/completeTest" method="POST" role="form">
+      <div class="form-group">
+        <label for="age">What is your age?</label>
+        <input type="integer" step="any" class="col-5 form-control" placeholder="Enter age" id="age" name="age">
+      </div>
+      <div class="form-group">
+        <label for="gender">What is your gender at birth?</label>
+        <input type="text" step="any" class="col-5 form-control" placeholder="Male/Female" id="gender" name="gender">
+      </div>
+      <div class="form-group">
+        <label for="pregnancy">How many pregnancies have you had?</label>
+        <input type="text" class="col-5 form-control" placeholder="0" id="pregnancy" name="pregnancy">
+      </div>
+      <div class="form-group">
+        <label for="height">What is your height(inches)?</label>
+        <input type="number" step="any" class="col-5 form-control" placeholder="60" id="height" name="height">
+      </div>
+      <div class="form-group">
+        <label for="weight">What is your weight(lbs)?</label>
+        <input type="number" step="any" class="col-5 form-control" placeholder="120" id="weight" name="weight">
+      </div>
+      <div class="form-group">
+        <label for="glucose">What is your glucose level?</label>
+        <input type="number" step="any" class="col-5 form-control" placeholder="120" id="glucose" name="glucose">
+      </div>
+      <div class="form-group">
+        <label for="bp">What is your blood pressure(diastolic)?</label>
+        <input type="number" step="any" class="col-5 form-control" placeholder="120" id="bp" name="bp">
+      </div>
+      <div class="form-group">
+        <label for="skin">What is your skin thickness?</label>
+        <input type="number" step="any" class="col-5 form-control" placeholder="120" id="skin" name="skin">
+      </div>
+      <div class="form-group">
+        <label for="insulin">What is your insulin?</label>
+        <input type="number" step="any" class="col-5 form-control" placeholder="120" id="insulin" name="insulin">
+      </div>
+      <div class="form-group">
+        <label for="pedigree">What is your diabetic pedigree function?</label>
+        <input type="number" step="any" class="col-5 form-control" placeholder="120" id="pedigree" name="pedigree">
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Find my Risk" class="btn btn-primary "></input>
+      </div>
+    </form>
   </main>
 
   <footer>
     <p>Rutgers University Data Science Boot Camp : Diabetes Portal Team Members</p>
-    <p><a href="#" target="_blank">Ryla Almario</a></p>
-    <p><a href="#" target="_blank">Sanjive Agarwal</a></p>
-    <p><a href="#" target="_blank">Andrew Lau</a></p>
-    <p><a href="#" target="_blank">Mitesh Parekh</a></p>
-    <p><a href="#" target="_blank">Tamala Chipeta</a></p>
+    <p><a href="#" target="_blank">Ryla Almario</a> - <a href="#" target="_blank">Sanjive Agarwal</a> - <a href="#"
+        target="_blank">Andrew Lau</a> - <a href="#" target="_blank">Mitesh Parekh</a> - <a href="#"
+        target="_blank">Tamala Chipeta</a></p>
   </footer>
 
 </body>
