@@ -10,8 +10,8 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <link rel="stylesheet" type="css" href="{{ url_for('static', filename='css/style.css') }}" title="style">
-
+  <!-- <link rel="stylesheet" type="css" href="{{ url_for('static', filename='css/style.css') }}" title="style"> -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
   <title>Diabetes Portal</title>
 </head>
 
@@ -37,18 +37,23 @@
         <li class="nav-item">
           <a class="nav-link" href="/analytics">Analytics</a>
         </li>
+      </ul>
     </div>
   </nav>
 
   <!-- ### INSERT CONTENT HERE ### -->
 
-
-  <img src="{{ url_for('static', filename='assets/img/diabetes_digital2.png') }}" alt="doctor" style="width:100%;">
-  <h3>Treatment</h3>
+  <div class="img-container">
+    <img src="{{ url_for('static', filename='assets/img/diabetes_digital2.png') }}" alt="doctor" style="width:100%;">
+    <div class="text-block">
+      <h1 class="treat">Treatment</h1>
+    </div>
+  </div>
 
   <div class="sidebar">
     <aside id="site-aside" role="complementary">
-      <ul>
+      <ul style="list-style-type: none">
+        <h3>Helpful Links</h3>
         <li><a href="https://www.webmd.com/diabetes/guide/understanding-diabetes-detection-treatment"
             target="_blank">Understanding
             Diabetes--Diagnosis & Treatment</a></li>
@@ -63,9 +68,10 @@
     </aside>
   </div>
 
-  <hr>
+
 
   <main id="main_section">
+    <hr>
     <h3>Treatment Center Map</h3>
     <h6>Click on the filters below to find a treatment center near you</h6>
     <div class='tableauPlaceholder' id='viz1597380229722' style='position: relative'><noscript><a href='#'>
@@ -86,7 +92,9 @@
         <param name='display_spinner' value='yes' />
         <param name='display_overlay' value='yes' />
         <param name='display_count' value='yes' />
-        <param name='language' value='en' /></object></div>
+        <param name='language' value='en' />
+      </object>
+    </div>
     <script type='text/javascript'>
       var divElement = document.getElementById('viz1597380229722');
       var vizElement = divElement.getElementsByTagName('object')[0];

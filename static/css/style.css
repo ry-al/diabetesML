@@ -71,18 +71,57 @@ img{
 }
 
 /* treatment page */
-#site-aside {
+/* #site-aside {
   display: inline;
   float: right;
   font-size: 14px;
   line-height: 1.75em;
   /* width: 27.27272727%; */
-  width: 30%;
+  /* width: 30%;
   padding-left: 15px;
   margin-left: 15px;
   font-style: italic;
   background-color: lightgray;
+}  */
+
+.bottom-left {
+  position: absolute;
+  top: 8px;
+  right: 16px;
 }
+
+.treat {
+font-size: 250%;
+}
+
+.text-block {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  /* background-color: black; */
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.img-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.sidebar{
+  float: right;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+
+ul.remove-points {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*  treatment end */
 
 footer a {
   color: white;
@@ -99,9 +138,9 @@ footer {
   padding-top: 5px;
   padding-bottom: 5px;
   background-color:#3c8af1cc;
-  font-family: '"Gill Sans", sans-serif';
+  font-family: 'Gill Sans, sans-serif';
   color: rgb(241, 234, 234);
-  }
+}
 
 
 .maintxt {
