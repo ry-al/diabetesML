@@ -34,7 +34,16 @@
 .container {
   margin-top: 20px;
 }
-
+.text-block2 {
+  /* position: absolute; */
+  /* top: 20px; */
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: black;
+  opacity: 0.6;
+}
 .facts-section {
     display: block;
     margin-left: auto;
@@ -137,7 +146,7 @@ footer {
   /* margin: 50px; */
   padding-top: 5px;
   padding-bottom: 5px;
-  background-color:#3c8af1cc;
+  background-color:#0f1113e5;
   font-family: 'Gill Sans, sans-serif';
   color: rgb(241, 234, 234);
 }
