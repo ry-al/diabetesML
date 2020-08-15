@@ -1,12 +1,16 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
-.navbar-nav > li > a {
+/* .navbar-nav > li > a {
   padding-top: 15px;
   padding-bottom: 15px;
-}
+  justify-content: space-between;
+} */
 
+.navbar{
+  justify-content: space-around;
+}
 .nav-link {
-  font-size: x-large;
+  padding-right: 10px;
 }
 
 .bd-placeholder-img {
@@ -24,6 +28,10 @@
   }
 }
 
+body {
+  font-family: 'Lexend Deca';
+}
+
 footer a {
   color: white;
 }
@@ -39,7 +47,7 @@ footer {
   padding-top: 5px;
   padding-bottom: 5px;
   background-color:#0f1113e5;
-  font-family: 'Gill Sans, sans-serif';
+  /* font-family: 'Gill Sans, sans-serif'; */
   color: rgb(241, 234, 234);
 }
 
@@ -57,11 +65,11 @@ footer {
 
 /* MAIN
 -------------------------------------------------- */
-.analytics_section {
+#analytics_section {
   margin-top: 50px;
   margin-bottom: 50px;
-  margin-right: 50px;
-  margin-left: 200px;
+  margin-right: 130px;
+  margin-left: 110px;
   align-content: center;
 }
 .container {
@@ -75,7 +83,8 @@ footer {
   padding-left: 20px;
   padding-right: 20px;
   border: black;
-  opacity: 0.6;
+  text-transform: uppercase;
+  opacity: 0.4;
 }
 
 .facts-section {
@@ -83,6 +92,10 @@ footer {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+.card-header {
+  text-transform: uppercase;
 }
 
 img{
@@ -149,7 +162,7 @@ font-size: 250%;
 .sidebar{
   float: right;
   margin-right: 50px;
-  margin-top: 50px;
+  margin-top: 270px;
 }
 
 ul.remove-points {
