@@ -26,9 +26,9 @@
         <li class="nav-item active">
           <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" href="/">Diabetes Facts</a>
-        </li>
+        </li> -->
         <li class="nav-item">
           <a class="nav-link" href="/treatment">Treatment</a>
         </li>
@@ -44,7 +44,13 @@
   <main role="main">
 
     <!-- ### CAROUSEL ### -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="img-container">
+      <img src="{{ url_for('static', filename='assets/img/welcome.png') }}" alt="doctor" style="width:100%;">
+      <div class="text-block2">
+        <h1 class="treat">Welcome to the Diabetes Portal</h1>
+      </div>
+    </div>
+    <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -55,11 +61,11 @@
           <div class="item active">
             <img src="{{ url_for('static', filename='assets/img/img1.jpg') }}" alt="doctor" style="width:100%;">
             <div class="container">
-              <div class="carousel-caption text-left">
-                <h1 style="color:black;">Welcome to Diabetes Portal</h1>
-                <p style="color:black;">Learn more about Diabetes</p>
-                <p><a class="btn btn-lg btn-primary" href="/" role="button">Quick Facts</a></p>
-              </div>
+              <div class="carousel-caption text-left text-block2">
+                <h1>Welcome to Diabetes Portal</h1> -->
+                <!-- <p style="color:rgb(55, 98, 163);">Learn more about Diabetes</p> -->
+                <!-- <p><a class="btn btn-lg btn-primary" href="/" role="button">Quick Facts</a></p> -->
+              <!-- </div>
             </div>
           </div>
         </div>
@@ -67,7 +73,7 @@
           <img src="{{ url_for('static', filename='assets/img/img2.jpg') }}" alt="insulin" style="width:100%;">
           <div class="container">
             <div class="carousel-caption text-left">
-              <h1 style="color:black;">Explore Treatments</h1>
+              <h1 style="color: rgb(55, 98, 163);">Explore Treatments</h1>
               <p style="color:black;">Find out the new treatments available</p>
               <p><a class="btn btn-lg btn-primary" href="/treatment" role="button">Learn more</a></p>
             </div>
@@ -92,7 +98,7 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-    </div>
+    </div> -->
 
     <!-- ### INSERT CONTENT HERE ### -->
     <div id="main_section">
@@ -102,126 +108,135 @@
       <!-- WHAT IS DIABETES -->
       <div class="container-fluid">
         <!-- <h4 class="display-4">What is Diabetes?</h4> -->
-        <div class="card-body">
-          <h2 class="card-title">What is Diabetes?</h2>
-          <p class=" lead card-text">"Diabetes is a chronic (long-lasting) health condition that affects how your body turns food
-            into energy.
-            <br>
-            <br>
-            Most of the food you eat is broken down into sugar (also called glucose) and released into your bloodstream.
-            When your blood sugar goes up, it signals your pancreas to release insulin.
-            Insulin acts like a key to let the blood sugar into your body’s cells for use as energy."
-            <a href="https://www.cdc.gov/diabetes/basics/diabetes.html" target="_blank">-Centers for Disease
-              Control(CDC)</a>
-            <br>
-            <br>
-            Unfortunately, there is no way to prevent type 1 diabetes and there's is no cure once you have diabetes.</p>
-        </div>
-      </div>
-
-      <br>
-      <br>
-
-      <hr>
-
-      <br>
-      <br>
-
-      <!-- TYPES -->
-      <div class="container-fluid">
-        <h2> Types of Diabetes </h2>
         <div class="row">
-
-          <div class="col-md-3">
-            <div class="thumbnail">
-              <div class="card-deck">
-                <div class="card-body">
-                  <h5 class="card-title">Prediabetes</h5>
-                  <p class="card-text">
-                    Blood sugar levels are higher than normal, but not high enough yet to be diagnosed as type 2
-                    diabetes.
-                  </p>
+          <div class="col-md-12">
+            <h1>What is Diabetes?</h1>
+            <div class="card">
+              <div class="card-body">
+                <!-- <h1 class="card-title">What is Diabetes?</h1> -->
+                <p class=" lead card-text">"Diabetes is a chronic (long-lasting) health condition that affects how your
+                  body turns food
+                  into energy.
                   <br>
-                  <a href="https://www.cdc.gov/diabetes/basics/prediabetes.html" target="_blank"
-                    class="btn btn-primary">Click here for more!</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="thumbnail">
-              <div class="card-deck">
-                <div class="card-body">
-                  <h5 class="card-title">Type 1 Diabetes</h5>
-                  <p class="card-text">
-                    Type 1 diabetes is thought to be caused by an autoimmune reaction (the body attacks itself by
-                    mistake) that stops your body from making insulin.
-                  </p>
                   <br>
-                  <a href="https://www.cdc.gov/diabetes/basics/type1s.html" target="_blank"
-                    class="btn btn-primary">Click
-                    here for more!</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="thumbnail">
-              <div class="card-deck">
-                <div class="card-body">
-                  <h5 class="card-title">Type 2 Diabetes</h5>
-                  <p class="card-text">
-                    With type 2 diabetes, your body doesn’t use insulin well and can’t keep blood sugar at normal
-                    levels.
-                  </p>
+                  Most of the food you eat is broken down into sugar (also called glucose) and released into your
+                  bloodstream.
+                  When your blood sugar goes up, it signals your pancreas to release insulin.
+                  Insulin acts like a key to let the blood sugar into your body’s cells for use as energy."
+                  <a href="https://www.cdc.gov/diabetes/basics/diabetes.html" target="_blank"><br>-Centers for Disease
+                    Control(CDC)</a>
                   <br>
-                  <a href="https://www.cdc.gov/diabetes/basics/type1s.html" target="_blank"
-                    class="btn btn-primary">Click
-                    here for more!</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="thumbnail">
-              <div class="card-deck">
-                <div class="card-body">
-                  <h5 class="card-title">Gestational Diabetes</h5>
-                  <p class="card-text">
-                    It develops in pregnant women who have never had diabetes. It usually goes away after your baby is
-                    born but increases your risk for type 2 diabetes.
-                  </p>
                   <br>
-                  <a href="https://www.cdc.gov/diabetes/basics/type1s.html" target="_blank"
-                    class="btn btn-primary">Click
-                    here for more!</a>
-                </div>
+                  Unfortunately, there is no way to prevent type 1 diabetes and there's is no cure once you have
+                  diabetes.</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
+        <br>
 
-      <br>
-      <br>
+        <hr>
 
-      <hr>
+        <br>
 
-      <br>
-      <br>
-
-      <!-- FACTS -->
-      <div>
+        <!-- TYPES -->
         <div class="container-fluid">
-          <h2> Quick Facts </h2>
-          <br>
-          <img class="mx-auto d-block" src="{{ url_for('static', filename='assets/img/cdc_infographic.jpg') }}">
-        </div>
-      </div>
+          <h1> Types of Diabetes </h1>
+          <div class="row">
 
+            <div class="col-md-3">
+              <div class="thumbnail">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Prediabetes</h5>
+                    <p class="card-text">
+                      Blood sugar levels are higher than normal, but not high enough yet to be diagnosed as type 2
+                      diabetes. You can have prediabetes for years but have no clear symptoms...
+                    </p>
+                    <br>
+                    <a href="https://www.cdc.gov/diabetes/basics/prediabetes.html" target="_blank"
+                      class="btn btn-primary">Click here for more!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="thumbnail">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Type 1 Diabetes</h5>
+                    <p class="card-text">
+                      Type 1 diabetes is thought to be caused by an autoimmune reaction (the body attacks itself by
+                      mistake) that stops your body from making insulin.
+                    </p>
+                    <br>
+                    <br>
+                    <a href="https://www.cdc.gov/diabetes/basics/type1.html" target="_blank"
+                      class="btn btn-primary">Click
+                      here for more!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="thumbnail">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Type 2 Diabetes</h5>
+                    <p class="card-text">
+                      With type 2 diabetes, your body doesn’t use insulin well and can’t keep blood sugar at normal
+                      levels. Your pancreas makes more insulin to try to get cells to respond.
+                    </p>
+                    <br>
+                    <a href="https://www.cdc.gov/diabetes/basics/type2.html" target="_blank"
+                      class="btn btn-primary">Click
+                      here for more!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="thumbnail">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Gestational Diabetes</h5>
+                    <p class="card-text">
+                      It develops in pregnant women who have never had diabetes. It usually goes away after your
+                      baby is
+                      born but increases your risk for type 2 diabetes.
+                    </p>
+                    <br>
+                    <br>
+                    <a href="https://www.cdc.gov/diabetes/basics/gestational.html" target="_blank"
+                      class="btn btn-primary">Click
+                      here for more!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+        <br>
+
+        <hr>
+
+        <br>
+
+        <!-- FACTS -->
+        <div>
+          <div class="container-fluid">
+            <h1> CDC Quick Facts </h1>
+            <br>
+            <img class="mx-auto d-block" src="{{ url_for('static', filename='assets/img/cdc_infographic.jpg') }}">
+          </div>
+        </div>
+
+      </div>
     </div>
 
   </main>
