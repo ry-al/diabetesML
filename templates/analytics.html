@@ -10,10 +10,11 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <link rel="stylesheet" type="css" href="{{ url_for('static', filename='assets/css/style.css') }}" title="style">
+  <!-- <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/style.css') }}"> -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
 
 
-  <title>Diabetes Portal</title>
+  <title>Analytics</title>
 </head>
 
 <body>
@@ -24,10 +25,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/" style="font: xx-large;">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/">Diabetes Facts</a>
+          <!-- <a class="nav-link" href="/">Diabetes Facts</a> -->
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/treatment">Treatment</a>
@@ -42,29 +43,37 @@
   </nav>
 
   <!-- ### INSERT CONTENT HERE ### -->
-  <main id="main_section">
-    <h1>Analytics</h1>
-  
 
-  <div class='tableauPlaceholder' id='viz1597061482863' style='position: relative'><noscript><a href='#'><img alt=' '
-          src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Di&#47;Diabetes_Machine_Learning&#47;Diabetes&#47;1_rss.png'
-          style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
-      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-      <param name='embed_code_version' value='3' />
-      <param name='site_root' value='' />
-      <param name='name' value='Diabetes_Machine_Learning&#47;Diabetes' />
-      <param name='tabs' value='no' />
-      <param name='toolbar' value='yes' />
-      <param name='static_image'
-        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Di&#47;Diabetes_Machine_Learning&#47;Diabetes&#47;1.png' />
-      <param name='animate_transition' value='yes' />
-      <param name='display_static_image' value='yes' />
-      <param name='display_spinner' value='yes' />
-      <param name='display_overlay' value='yes' />
-      <param name='display_count' value='yes' />
-      <param name='language' value='en' /></object></div>
-  <script type='text/javascript'>                    
-    var divElement = document.getElementById('viz1597061482863'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '1016px'; vizElement.style.height = '991px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+  <div class="img-container">
+    <img src="{{ url_for('static', filename='assets/img/data_analysis.jpg') }}" alt="doctor" width="1349" height='590'>
+    <div class="text-block">
+      <h1 class="treat">Learn more about Our Data</h1>
+    </div>
+  </div>
+
+
+  <!-- <h1>Analytics</h1> -->
+
+  <main id="analytics_section">
+    <div class='tableauPlaceholder' id='viz1597061482863' style='position: relative'><noscript><a href='#'><img alt=' '
+            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Di&#47;Diabetes_Machine_Learning&#47;Diabetes&#47;1_rss.png'
+            style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='Diabetes_Machine_Learning&#47;Diabetes' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image'
+          value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Di&#47;Diabetes_Machine_Learning&#47;Diabetes&#47;1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en' /></object></div>
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1597061482863'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '1016px'; vizElement.style.height = '991px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
   </main>
 

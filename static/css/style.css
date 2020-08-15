@@ -1,6 +1,13 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
+.navbar-nav > li > a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 
+.nav-link {
+  font-size: x-large;
+}
 
 .bd-placeholder-img {
   font-size: 1.125rem;
@@ -17,6 +24,25 @@
   }
 }
 
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: #b31ee0;
+}
+     
+footer {
+  clear: both;
+  text-align: center;
+  /* margin: 50px; */
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color:#0f1113e5;
+  font-family: 'Gill Sans, sans-serif';
+  color: rgb(241, 234, 234);
+}
+
 /* CAROUSEL
 -------------------------------------------------- */
 
@@ -28,11 +54,28 @@
   align-content: center;
 }
 
+
 /* MAIN
 -------------------------------------------------- */
-
+.analytics_section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 50px;
+  margin-left: 200px;
+  align-content: center;
+}
 .container {
   margin-top: 20px;
+}
+.text-block2 {
+  /* position: absolute; */
+  /* top: 20px; */
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: black;
+  opacity: 0.6;
 }
 
 .facts-section {
@@ -61,48 +104,61 @@ img{
 
 
 /* test.html */
-.bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
 
 /* treatment page */
-#site-aside {
+/* #site-aside {
   display: inline;
   float: right;
   font-size: 14px;
   line-height: 1.75em;
   /* width: 27.27272727%; */
-  width: 30%;
+  /* width: 30%;
   padding-left: 15px;
   margin-left: 15px;
   font-style: italic;
   background-color: lightgray;
+}  */
+
+.bottom-left {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: xx-large;
+  font-weight: bolder;
 }
 
-footer a {
+.treat {
+font-size: 250%;
+}
+
+.text-block {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  /* background-color: black; */
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.img-container {
+  position: relative;
+  text-align: center;
   color: white;
 }
-
-footer a:hover {
-  color: #b31ee0;
+.sidebar{
+  float: right;
+  margin-right: 50px;
+  margin-top: 50px;
 }
-     
-footer {
-  clear: both;
-  text-align: center;
-  /* margin: 50px; */
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background-color:#3c8af1cc;
-  font-family: '"Gill Sans", sans-serif';
-  color: rgb(241, 234, 234);
-  }
 
+ul.remove-points {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*  treatment end */
 
 .maintxt {
     position: relative;
