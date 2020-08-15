@@ -10,9 +10,10 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <link rel="stylesheet" type="css" href="{{ url_for('static', filename='assets/css/style.css') }}" title="style">
+  <!-- <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/style.css') }}"> -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
 
-  <title>Diabetes Portal</title>
+  <title>Diabetes Predictor</title>
 </head>
 
 <body>
@@ -26,7 +27,7 @@
           <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/">Diabetes Facts</a>
+          <!-- <a class="nav-link" href="/">Diabetes Facts</a> -->
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/treatment">Treatment</a>
@@ -41,30 +42,31 @@
   </nav>
 
   <!-- ### INSERT CONTENT HERE ### -->
-  <main id="main_section">
-    <figure class="caption-1">
-      <img src="{{ url_for('static', filename='assets/img/predictor6.jpg') }}" alt="prediction" width="1903"
-        height='680'>
-      <figcaption class="px-5 py-4 text-right text-light">
-        <h2 class="h5 font-weight-bold mb-0"> Diabetes Predictor</h2>
-        <p>Let our AI predict your Diabetes risk!<br> Enter your information and click submit below.</p>
-      </figcaption>
-    </figure>
+  <div class="img-container">
+    <img src="{{ url_for('static', filename='assets/img/predictor7.png') }}" alt="prediction" width="1349" height='590'>
+    <div class="text-block">
+      <h1 class="treat"> Diabetes Predictor</h1>
+      <h4>Let our AI predict your Diabetes risk!<br> Enter your information and click submit below.</h4>
+    </div>
+  </div>
 
-    <!-- Diabetes Predictor Test-->
-    <div class="container-fluid">
-      <h2 class="display-4"> Diabetes Predictor</h2>
-      <p>Let our AI predict your Diabetes risk!<br> Enter your information and click submit below.</p>
+  <!-- Diabetes Predictor Test-->
+  <!-- <div class="container-fluid">
+    <h2 class="display-4"> Diabetes Predictor</h2>
+    <p>Let our AI predict your Diabetes risk!<br> Enter your information and click submit below.</p> -->
 
-      <!-- what does this mean? -->
-      <br>
-      <br>
-      <br>
+    <!-- what does this mean? -->
+    <!-- <br>
+    <br>
+    <br> -->
+    <main id="main_section">
       <h3>Complete Form</h3>
+      <p>Please keep in mind that our AI is still learning! Consult with your doctor for a proper diagnosis.</p>
+      <hr>
       <form action="/completeTest" method="POST" role="form">
         <div class="form-group">
           <label for="age">What is your age?</label>
-          <input type="integer" step="any" class="form-control" placeholder="Enter age" id="age" name="age"> 
+          <input type="integer" step="any" class="form-control" placeholder="Enter age" id="age" name="age">
         </div>
         <div class="form-group">
           <label for="gender">What is your gender at birth?</label>
@@ -106,7 +108,6 @@
           <input type="submit" value="Find my Risk" class="btn btn-primary "></input>
         </div>
       </form>
-    </div>
   </main>
 
   <footer>
