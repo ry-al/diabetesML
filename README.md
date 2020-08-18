@@ -36,6 +36,7 @@ The WHO website didn't have a readily available csv so this information from the
 <h3>Treatment_Cleaning Notebook</h3>
 This notebook contains the cleaning for the DRPR treatment centers csv in preparation for Tableau. This csv didn't contain the latitude and longitude needed to map out the treatment centers. The first step was importing the dependencies needed to make an API call with Google Geocode. After getting the data and adding the coordinates to the dataframe, a new csv was exported. The exported csv was then used to clean up any missing coordinates, renaming and reorganizing columns to fit the Tableau hierarchy, editing NaNs for missing websites and second address lines, and splitting up the type of patients that the clinic provides care for. A new csv was then exported to be used in Tableau.
 <br>
+<br>
 The next section goes into the ETL and model testing for the best model to use for our website.
 
 ## Machine Learning
