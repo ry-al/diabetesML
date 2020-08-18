@@ -47,20 +47,21 @@ For the Machine Learning element of our project, we ran 3 different types of mod
 
 We ran a Trees model or a Random Forest Classifier. This model gave us insight on the importance of the 8 features used to determine risk of diabetes in individuals. As a reminder, the 8 features are "Age", "Glucose", "DiabetesPedigreeFunction", "BloodPressure", "Insulin", "SkinThickness", "BMI", and “Pregancies”.  
 
-From these 8 features, we ran the Random Forest Classifier for 9 different combinations.  We started with "Age","Glucose","DiabetesPedigreeFunction","BloodPressure","Insulin","SkinThickness","BMI". It returned a score of 0.956. 
+From these 8 features, we ran the Random Forest Classifier for 9 different combinations.  We started with "Age","Glucose","DiabetesPedigreeFunction","BloodPressure","Insulin","SkinThickness","BMI","Pregnancies". It returned a score of 0.958. 
 
 Here is the feature importance for this combination.
 
-28.35%	Glucose<br>
-17.26%	BMI<br>
-16.37%	Age<br>
-13.57%	DiabetesPedigreeFunction<br>
-9.26%	BloodPressure<br>
-8.04%	Insulin<br>
-7.14%	SkinThickness<br>
+26.49%	Glucose<br>
+15.58%	BMI<br>
+14.20%	Age<br>
+12.18%	DiabetesPedigreeFunction<br>
+9.14%	  Pregnancies<br>
+8.12%	  BloodPressure<br>
+7.45%	  Insulin<br>
+6.84%	  SkinThickness<br>
 
 
-For the next 5 combinations, we removed the feature with lowest importance. Here are the results with their corresponding scores:
+For the next 5 combinations, we removed the feature with lowest importance as well as pregnancies. Here are the results with their corresponding scores:
 
 Score: 0.958
 
@@ -69,7 +70,7 @@ Score: 0.958
 17.47%	Age<br>
 14.95%	DiabetesPedigreeFunction<br>
 10.52%	BloodPressure<br>
-9.21%	Insulin<br>
+9.21%	  Insulin<br>
 
 
 Score: 0.962
