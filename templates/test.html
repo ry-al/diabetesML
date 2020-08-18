@@ -6,12 +6,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <!-- <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/style.css') }}"> -->
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
   <title>Diabetes Predictor</title>
 </head>
@@ -20,57 +18,40 @@
 
   <!-- ### NAV BAR ### -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/">H O M E <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <!-- <a class="nav-link" href="/">Diabetes Facts</a> -->
+          <a class="nav-link" href="/treatment">T R E A T M E N T</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/treatment">Treatment</a>
+          <a class="nav-link" href="/test">P R E D I C T O R</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/test">Diabetes Predictor</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/analytics">Analytics</a>
+          <a class="nav-link" href="/analytics">A N A L Y T I C S</a>
         </li>
     </div>
   </nav>
 
   <!-- ### INSERT CONTENT HERE ### -->
-  <!-- <div class="img-container">
-    <img class="hero-image" src="{{ url_for('static', filename='assets/img/predictor6.jpg') }}" alt="prediction" width="1349" height='590'>
-    <div class="text-block">
-      <h1 class="treat"> Diabetes Predictor</h1>
-      <h4>Let our AI predict your Diabetes risk!<br> Enter your information and click submit below.</h4>
-    </div>
-  </div> -->
-
-  <!-- Diabetes Predictor Test-->
-  <!-- <div class="container-fluid">
-    <h2 class="display-4"> Diabetes Predictor</h2>
-    <p>Let our AI predict your Diabetes risk!<br> Enter your information and click submit below.</p> -->
-  <!-- <br> -->
+  <div class="jumbotron bg-cover-predictor"></div>
+ 
   <div class="sidebar">
     <aside id="site-aside" role="complementary">
       <img src="{{ url_for('static', filename='assets/img/predictor5.jpg') }}" alt="prediction">
     </aside>
   </div>
 
-  <!-- what does this mean? -->
-  <!-- <br>
-    <br>
-    <br> -->
+
   <main id="main_section">
-    <!-- <h3>Complete Form</h3> -->
-    <h1 class="treat"> Diabetes Predictor</h1>
-    <h4>Let our AI predict your Diabetes risk!<br> Enter your information and click submit below.</h4>
+    <h1>DIABETES PREDICTOR</h1>
+    <h4>Let our AI predict your Diabetes risk!<br>Enter your information and click submit below.</h4>
     <p>Please keep in mind that our AI is still learning! Consult with your doctor for a proper diagnosis.</p>
+    
     <hr>
+
     <form action="/completeTest" method="POST" role="form">
       <div class="form-group">
         <label for="age">What is your age?</label>
