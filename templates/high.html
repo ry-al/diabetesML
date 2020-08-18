@@ -6,14 +6,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <link rel="stylesheet" type="css" href="{{ url_for('static', filename='assets/css/style.css') }}" title="style">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
-
-  <title>Diabetes Portal</title>
+  <title>High Risk Prediction</title>
 </head>
 
 <body>
@@ -24,53 +22,51 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/">H O M E <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/">Diabetes Facts</a>
+          <a class="nav-link" href="/treatment">T R E A T M E N T</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/treatment">Treatment</a>
+          <a class="nav-link" href="/test">P R E D I C T O R</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/test">Diabetes Predictor</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/analytics">Analytics</a>
+          <a class="nav-link" href="/analytics">A N A L Y T I C S</a>
         </li>
     </div>
   </nav>
 
   <!-- ### INSERT CONTENT HERE ### -->
-  <main id="main_section">
+  <div class="sidebar">
+    <aside id="site-aside" role="complementary">
+      <img src="{{ url_for('static', filename='assets/img/providers.jpg') }}" alt="prediction" height="300px">
+    </aside>
+  </div>
+
+  <main id="results">
     <h1>High Risk of Diabetes</h1>
+    <h4><u>Analysis</u></h4>
+    <h5> Based on your results, you're at high risk to get diabetes.
+    </h5>
+    <hr>
+    <h6> Please go see your doctor, and ask for a simple blood test to confirm</h6>
+    <br>
+    <h6>If you are diagnosed with a high risk of diabetes, <br>a CDC recognized National Diabetes Prevention Center can help you.
+      <br>Please click on the "Treatment" link above for more info. </h6>
+    <br>
+    <h6>To learn more about Diabetes, click on the "Analytics" or "Home" links above. </h6>
+    <br>
+    <hr>
+    <h5> To retake the test, please click on "Diabetes Predictor" above. </h5>
+    <hr>
 
-    <div class="col-xs-12 col-md-6">
-        <h4><u>Analysis</u></h4>
-        <h5> Based on your results, you're a high risk to get diabetes. 
-        </h5>
-        <hr>
-        <h6> Please go see your doctor, and ask for a simple blood test to confirm</h6>
-        <br>
-        <h6>If you are diagnosed with a high risk of diabetes, a CDC recognized National Diabetes Prevention can help you. Please click on the "Treatment" link above for more info </h6>
-        <br>
-        <h6>To learn more about Diabetes, click on the "Diabetes Facts" or "Analytics" links above </h6>
-        <br>
-        <hr>
-        <h5> To retake the test, please click on "Diabetes Predictor" above </h5>
-        <hr>
-
-      </div>
-  
-
+  </main>
 
   <footer>
     <p>Rutgers University Data Science Boot Camp : Diabetes Portal Team Members</p>
-    <p><a href="#" target="_blank">Ryla Almario</a></p>
-    <p><a href="#" target="_blank">Sanjive Agarwal</a></p>
-    <p><a href="#" target="_blank">Andrew Lau</a></p>
-    <p><a href="#" target="_blank">Mitesh Parekh</a></p>
-    <p><a href="#" target="_blank">Tamala Chipeta</a></p>
+    <p><a href="#" target="_blank">Ryla Almario</a> - <a href="#" target="_blank">Sanjive Agarwal</a> - <a href="#"
+        target="_blank">Andrew Lau</a> - <a href="#" target="_blank">Mitesh Parekh</a> - <a href="#"
+        target="_blank">Tamala Chipeta</a></p>
   </footer>
 
   <!-- Optional JavaScript -->
@@ -84,7 +80,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
-  
+
 </body>
 
 </html>
