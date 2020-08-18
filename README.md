@@ -37,7 +37,7 @@ The dataset from Frankfurt patients was validated for any unwanted records and s
 <br>
 
 <h3>WHO World Figures</h3>
-The CSV data file from the WHO website needed to be cleaned for spaces, commas and other hidden characters. The data was further enriched with missing ISO Country Codes and the Country Names. This was to allow for easy and better Tableau map visualizations. The data for countries in Europe had to be manually added from the WHO Country specific web sites.
+The CSV data file from the WHO website needed to be cleaned for spaces, commas and other hidden characters. The data was further enriched with missing ISO Country Codes and the Country Names. This was to allow for easy and better Tableau map visualizations. The data for countries in Europe had to be manually added from the WHO Country specific websites.
 <br>
 <br>
 
@@ -185,6 +185,6 @@ In the future, we would be interested in obtaining additional demographic inform
 
 ## Resources
 
-- Images were provided by Unsplash, CDC, and Jordon Cheung(the readme.md image).
+- Images were provided by Unsplash, CDC, and Jordon Cheung (the readme.md image).
 
 - Additional information about diabetes was provided by CDC, WebMD, NIH, and Mayo Clinic.
