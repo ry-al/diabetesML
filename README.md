@@ -18,15 +18,26 @@ We also want to provide you with additional information about diabetes so that y
 
 
 ## Tools and Programs
-Tools: Tableau, Jupyter Notebook, MS Excel
-Programs: Python
+Python, Tableau, Jupyter Notebook, Google Geocode API, MS Excel, MS PPT
 
 ## Datasets:
    * [Diabetes ML](https://www.kaggle.com/johndasilva/diabetes/data)
    * [WHO World Figures](https://www.who.int/diabetes/facts/world_figures/en/index5.html)
    * [Treatment Centers](/resources/data/DPRP_Results_Full_RegistryAug_05_2020.csv)
 
-## ETL???
+## ETL
+All the data and jupyter notebooks used for this project can be found in the [resources](/resources) folder.
+
+<h3>Diabetes ML</h3>
+This dataset from frankfurt patients was already clean so no intense ETL was done outside of making sure there was enough data to process machine learning models. 
+
+<h3>WHO World Figures</h3>
+The WHO website didn't have a readily available csv so this information from the website needed to be pulled. There was an error on the website that prevented us from getting the diabetes data from Europe. In order to get that information,....
+
+<h3>Treatment_Cleaning Notebook</h3>
+This notebook contains the cleaning for the DRPR treatment centers csv in preparation for Tableau. This csv didn't contain the latitude and longitude needed to map out the treatment centers. The first step was importing the dependencies needed to make an API call with Google Geocode. After getting the data and adding the coordinates to the dataframe, a new csv was exported. The exported csv was then used to clean up any missing coordinates, renaming and reorganizing columns to fit the Tableau hierarchy, editing NaNs for missing websites and second address lines, and splitting up the type of patients that the clinic provides care for. A new csv was then exported to be used in Tableau.
+
+The next section goes into the ETL and model testing for the best model to use for our website.
 
 ## Machine Learning
 
@@ -158,13 +169,6 @@ Lastly, the results for over 0.6 and over 0.5 are 113/176 or 64.20% and 128/219 
 
 ![Dark Blue Diabetes Picture with Red iPad](/static/assets/img/TensorImage.PNG)
 
-Behind the Prediction tests?
-
-Accuracy(tableau visuals)
-
-
-Feature Importance(tableau visuals)
-
 
 ## Findings/...what to find on the website??
 
@@ -180,3 +184,7 @@ Our dataset for the machinie learning aspect only contained data from the Frankf
 In the future, we would be interested in obtaining additional demographic information of the people living with diabetes. Government organizations and philanthopic groups didn't provide that type of information for public use.
 
 ## Resources
+
+* Images were provided by unsplash, CDC, and Jordon Cheung(the readme.md image).
+
+* Additional information about diabetes was provided by CDC, WebMD, NIH, and Mayo Clinic.
