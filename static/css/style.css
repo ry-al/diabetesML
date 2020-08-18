@@ -42,10 +42,6 @@
   }
 }
 
-/* body {
-  font-family: 'Lexend Deca';
-} */
-
 footer a {
   color: white;
 }
@@ -86,6 +82,7 @@ footer {
   margin-left: 110px;
   align-content: center;
 }
+
 .container {
   margin-top: 20px;
 }
@@ -114,9 +111,6 @@ footer {
 }
 
 img{
-  /* display: block;
-  margin-left: auto;
-  margin-right: auto; */
   display: flex;
   justify-content: center;
 }
@@ -154,10 +148,6 @@ img{
   height: 250px;
 }
 
-/* .text-block{
-  background-color: rgba(128, 128, 128, 0.452);
-} */
-
 /* high.html */
 #results {
   margin-top: 50px;
@@ -166,19 +156,6 @@ img{
   margin-left: 110px;
   align-content: center;
 }
-/* treatment page */
-/* #site-aside {
-  display: inline;
-  float: right;
-  font-size: 14px;
-  line-height: 1.75em;
-  /* width: 27.27272727%; */
-  /* width: 30%;
-  padding-left: 15px;
-  margin-left: 15px;
-  font-style: italic;
-  background-color: lightgray;
-}  */
 
 .bottom-left {
   position: absolute;
@@ -192,16 +169,6 @@ img{
 font-size: 250%;
 }
 
-/* .text-block {
-  position: absolute;
-  top: 20px;
-  left: 20px; */
-  /* background-color: black; */
-  /* color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-} */
-
 .img-container {
   position: relative;
   text-align: center;
@@ -213,18 +180,11 @@ font-size: 250%;
   margin-top: 65px;
 }
 
-/* .jumbotron {
-  background-image: url("../assets/img/");
-  background-size: cover;
-} */
-
 ul.remove-points {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-
-/*  treatment end */
 
 .maintxt {
     position: relative;
