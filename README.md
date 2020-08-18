@@ -16,17 +16,28 @@ Because of this, early detection is key which is why we decided to make a quick 
 
 We also want to provide you with additional information about diabetes so that you can stay informed about this growing chronic illness.
 
-
 ## Tools and Programs
-Tools: Tableau, Jupyter Notebook, MS Excel
-Programs: Python
+Python, Tableau, Jupyter Notebook, Google Geocode API, MS Excel, MS PPT
 
 ## Datasets:
    * [Diabetes ML](https://www.kaggle.com/johndasilva/diabetes/data)
    * [WHO World Figures](https://www.who.int/diabetes/facts/world_figures/en/index5.html)
    * [Treatment Centers](/resources/data/DPRP_Results_Full_RegistryAug_05_2020.csv)
 
-## ETL???
+## ETL
+All the data and jupyter notebooks used for this project can be found in the [resources](/resources) folder.
+
+<h3>Diabetes ML</h3>
+This dataset from frankfurt patients was already clean so no intense ETL was done outside of making sure there was enough data to process machine learning models. 
+
+<h3>WHO World Figures</h3>
+The WHO website didn't have a readily available csv so this information from the website needed to be pulled. There was an error on the website that prevented us from getting the diabetes data from Europe. In order to get that information,....
+
+<h3>Treatment_Cleaning Notebook</h3>
+This notebook contains the cleaning for the DRPR treatment centers csv in preparation for Tableau. This csv didn't contain the latitude and longitude needed to map out the treatment centers. The first step was importing the dependencies needed to make an API call with Google Geocode. After getting the data and adding the coordinates to the dataframe, a new csv was exported. The exported csv was then used to clean up any missing coordinates, renaming and reorganizing columns to fit the Tableau hierarchy, editing NaNs for missing websites and second address lines, and splitting up the type of patients that the clinic provides care for. A new csv was then exported to be used in Tableau.
+<br>
+<br>
+The next section goes into the ETL and model testing for the best model to use for our website.
 
 ## Machine Learning
 
@@ -36,20 +47,21 @@ For the Machine Learning element of our project, we ran 3 different types of mod
 
 We ran a Trees model or a Random Forest Classifier. This model gave us insight on the importance of the 8 features used to determine risk of diabetes in individuals. As a reminder, the 8 features are "Age", "Glucose", "DiabetesPedigreeFunction", "BloodPressure", "Insulin", "SkinThickness", "BMI", and “Pregancies”.  
 
-From these 8 features, we ran the Random Forest Classifier for 9 different combinations.  We started with "Age","Glucose","DiabetesPedigreeFunction","BloodPressure","Insulin","SkinThickness","BMI". It returned a score of 0.956. 
+From these 8 features, we ran the Random Forest Classifier for 9 different combinations.  We started with "Age","Glucose","DiabetesPedigreeFunction","BloodPressure","Insulin","SkinThickness","BMI","Pregnancies". It returned a score of 0.958. 
 
 Here is the feature importance for this combination.
 
-28.35%	Glucose<br>
-17.26%	BMI<br>
-16.37%	Age<br>
-13.57%	DiabetesPedigreeFunction<br>
-9.26%	BloodPressure<br>
-8.04%	Insulin<br>
-7.14%	SkinThickness<br>
+26.49%	Glucose<br>
+15.58%	BMI<br>
+14.20%	Age<br>
+12.18%	DiabetesPedigreeFunction<br>
+9.14%	  Pregnancies<br>
+8.12%	  BloodPressure<br>
+7.45%	  Insulin<br>
+6.84%	  SkinThickness<br>
 
 
-For the next 5 combinations, we removed the feature with lowest importance. Here are the results with their corresponding scores:
+For the next 5 combinations, we removed the feature with lowest importance as well as pregnancies. Here are the results with their corresponding scores:
 
 Score: 0.958
 
@@ -58,7 +70,7 @@ Score: 0.958
 17.47%	Age<br>
 14.95%	DiabetesPedigreeFunction<br>
 10.52%	BloodPressure<br>
-9.21%	Insulin<br>
+9.21%	  Insulin<br>
 
 
 Score: 0.962
@@ -158,13 +170,6 @@ Lastly, the results for over 0.6 and over 0.5 are 113/176 or 64.20% and 128/219 
 
 ![Dark Blue Diabetes Picture with Red iPad](/static/assets/img/TensorImage.PNG)
 
-Behind the Prediction tests?
-
-Accuracy(tableau visuals)
-
-
-Feature Importance(tableau visuals)
-
 
 ## Findings/...what to find on the website??
 
@@ -180,3 +185,7 @@ Our dataset for the machinie learning aspect only contained data from the Frankf
 In the future, we would be interested in obtaining additional demographic information of the people living with diabetes. Government organizations and philanthopic groups didn't provide that type of information for public use.
 
 ## Resources
+
+* Images were provided by unsplash, CDC, and Jordon Cheung(the readme.md image).
+
+* Additional information about diabetes was provided by CDC, WebMD, NIH, and Mayo Clinic.
