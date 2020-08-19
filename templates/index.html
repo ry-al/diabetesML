@@ -22,16 +22,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="/">H O M E <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/">H O M E &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/treatment">T R E A T M E N T</a>
+          <a class="nav-link" href="/treatment">T R E A T M E N T &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/test">P R E D I C T O R</a>
+          <a class="nav-link" href="/test">P R E D I C T O R &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/analytics">A N A L Y T I C S</a>
+          <a class="nav-link" href="/analytics">A N A L Y T I C S &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
         </li>
     </div>
   </nav>
@@ -44,7 +44,7 @@
       <div class="row">
         <div class="col-md-12">
           <h1>WHAT IS DIABETES?</h1>
-          <div class="card">
+          <!-- <div class="card"> -->
             <div class="card-body">
               <p class=" lead card-text">"Diabetes is a chronic (long-lasting) health condition that affects how your
                 body turns food
@@ -80,11 +80,12 @@
           <div class="col-md-3">
             <div class="thumbnail">
               <div class="card">
+                <img src="{{ url_for('static', filename='assets/img/prediabetes.png') }}" class="mx-auto d-block" height=150px width=150px alt="Prediabetes">
                 <h5 class="card-header text-center">Prediabetes</h5>
                 <div class="card-body">
                   <p class="card-text">
                     Blood sugar levels are higher than normal, but not high enough yet to be diagnosed as type 2
-                    diabetes. You can have prediabetes for years but have no clear symptoms...
+                    diabetes. You can have prediabetes for years but have no clear symptoms.
                   </p>
                   <br>
                   <a href="https://www.cdc.gov/diabetes/basics/prediabetes.html" target="_blank"
@@ -97,6 +98,7 @@
           <div class="col-md-3">
             <div class="thumbnail">
               <div class="card">
+                <img src="{{ url_for('static', filename='assets/img/type1.png') }}" class="mx-auto d-block" height=150px width=150px alt="Prediabetes">
                 <h5 class="card-header text-center">Type 1 Diabetes</h5>
                 <div class="card-body">
                   <p class="card-text">
@@ -116,6 +118,7 @@
           <div class="col-md-3">
             <div class="thumbnail">
               <div class="card">
+                <img src="{{ url_for('static', filename='assets/img/type2.png') }}" class="mx-auto d-block" height=150px width=150px alt="Prediabetes">
                 <h5 class="card-header text-center">Type 2 Diabetes</h5>
                 <div class="card-body">
                   <p class="card-text">
@@ -134,6 +137,7 @@
           <div class="col-md-3">
             <div class="thumbnail">
               <div class="card">
+                <img src="{{ url_for('static', filename='assets/img/pregnant.png') }}" class="mx-auto d-block" height=150px width=150px alt="Prediabetes">
                 <h5 class="card-header text-center">Gestational Diabetes</h5>
                 <div class="card-body">
                   <p class="card-text">
