@@ -116,12 +116,13 @@ img{
 }
 
 .bg-cover-index{
-  background-image: url("../assets/img/new_header.png");
+  background-image: url("../assets/img/logo.png");
   background-attachment: static;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 350px;
+  height: 200px;
+  image-resolution: 1920dpi
 }
 
 .bg-cover-analysis{
@@ -138,7 +139,9 @@ img{
   background-attachment: static;
   background-position: center;
   background-repeat: no-repeat;
-  height: 250px;
+  height: 350px;
+  image-resolution: 1920dpi;
+  
 }
 .bg-cover-treatment{
   background-image: url("../assets/img/header1.png");
