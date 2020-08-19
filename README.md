@@ -6,7 +6,7 @@
 
 Team Members: Ryla Almario, Sanjive Agarwal, Andrew Lau, Mitesh Parekh, Tamala Chipeta
 
-Our Website: https://diabetes-portal.herokuapp.com/
+Our Website: [Diabetes Portal](https://diabetes-portal.herokuapp.com/)
 
 ## Background
 
