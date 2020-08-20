@@ -121,7 +121,7 @@ img{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 200px;
+  height: 300px;
   image-resolution: 1920dpi
 }
 
@@ -131,7 +131,7 @@ img{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 250px;
+  height: 300px;
 }
 
 .bg-cover-predictor{
@@ -139,7 +139,7 @@ img{
   background-attachment: static;
   background-position: center;
   background-repeat: no-repeat;
-  height: 350px;
+  height: 300px;
   image-resolution: 1920dpi;
   
 }
@@ -148,7 +148,7 @@ img{
   background-attachment: static;
   background-position: center;
   background-repeat: no-repeat;
-  height: 250px;
+  height: 300px;
 }
 
 /* high.html */
